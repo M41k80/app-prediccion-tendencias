@@ -41,8 +41,8 @@ Aplicación web creada para anticipar tendencias del mercado en tiempo real medi
 
 ### **Enlaces de Acceso al MVP:**
 
-[![FIGMA](https://img.shields.io/badge/figma-9C55F7?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/MqCs0Jc9ryOe1KTtI7AnIR/E-commerce-de-Helader%C3%ADa?node-id=0-1&t=Ou1CPCHWtmK3y9q1-1)
-[![Sitio web](https://img.shields.io/website?url=https%3A%2F%2Ffipe.cl&style=for-the-badge)](https://heladeria-deploy.vercel.app/)
+[![FIGMA](https://img.shields.io/badge/figma-9C55F7?style=for-the-badge&logo=figma&logoColor=white)]()
+[![Sitio web](https://img.shields.io/website?url=https%3A%2F%2Ffipe.cl&style=for-the-badge)]()
 
 
 ## 🤝 Nuestro Equipo
@@ -50,15 +50,15 @@ Aplicación web creada para anticipar tendencias del mercado en tiempo real medi
 <table align="center">
   
   <tr>
-    <td align="center">User <img src="https://github.com/No-Country-simulation/s21-13-n-webapp/blob/main/img/ar.png" width="16" /></td>
-    <td align="center">User <img src="https://github.com/No-Country-simulation/s21-13-n-webapp/blob/main/img/pe.png" width="16" /></td>
-    <td align="center">User <img src="https://github.com/No-Country-simulation/s21-13-n-webapp/blob/main/img/col.png" width="16" /></td>
+    <td align="center">Luis Quispe <img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/pe.png" width="16" /></td>
+    <td align="center">Karim Jalit <img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/ar.png" width="16" /></td>
+    <td align="center">José Mora <img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/mex.png" width="16" /></td>
 
   </tr>
   <tr>
-    <td align="center">Dev</td>
-    <td align="center">Dev</td>
-    <td align="center">Dev</td>
+    <td align="center">PM & Front-End</td>
+    <td align="center">Design UX/UI</td>
+    <td align="center">Full Stack</td>
   </tr>
   <tr>
     <td align="center"><a href="https://www.linkedin.com">
@@ -76,12 +76,12 @@ Aplicación web creada para anticipar tendencias del mercado en tiempo real medi
 
 <table align="center">
   <tr>
-    <td align="center">User <img src="https://github.com/No-Country-simulation/s21-13-n-webapp/blob/main/img/ar.png" width="16" /></td>
-    <td align="center">user <img src="https://github.com/No-Country-simulation/s21-13-n-webapp/blob/main/img/mex.png" width="16" /></td>
+    <td align="center">Delmer Rodriguez <img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/ar.png" width="16" /></td>
+    <td align="center">Christian Aránguiz <img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/ve.png" width="16" /></td>
   </tr>
   <tr>
-    <td align="center">Dev</td>
-    <td align="center">UX-UI</td>
+    <td align="center">Back-End</td>
+    <td align="center">Front-End</td>
   </tr>
   <tr>
     <td align="center"><a href="https://www.linkedin.com">
