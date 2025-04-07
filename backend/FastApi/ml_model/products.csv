@@ -1,0 +1,1001 @@
+ProductID,ProductName,Category,SubCategory,Price,IsPerishable,IsSeasonal
+P0001,Jugo Jumex Mango 1L,Bebidas,Jugo,6.11,Yes,Yes
+P0002,Gatorade Azul 750ml,Bebidas,Gatorade,6.1,Yes,No
+P0003,Pepsi 500ml,Bebidas,Pepsi,4.34,Yes,No
+P0004,Agua Bonafont 1L,Bebidas,Agua,1.36,Yes,No
+P0005,Jugo Jumex Mango 1L,Bebidas,Jugo,8.1,Yes,No
+P0006,Pepsi 500ml,Bebidas,Pepsi,1.4,Yes,Yes
+P0007,Gatorade Azul 750ml,Bebidas,Gatorade,3.85,Yes,No
+P0008,Jugo Jumex Mango 1L,Bebidas,Jugo,7.57,Yes,No
+P0009,Gatorade Azul 750ml,Bebidas,Gatorade,5.57,Yes,Yes
+P0010,Gatorade Azul 750ml,Bebidas,Gatorade,5.38,Yes,No
+P0011,Agua Bonafont 1L,Bebidas,Agua,6.9,Yes,No
+P0012,Pepsi 500ml,Bebidas,Pepsi,9.67,Yes,Yes
+P0013,Coca-Cola 600ml,Bebidas,Coca-Cola,1.12,Yes,No
+P0014,Coca-Cola 600ml,Bebidas,Coca-Cola,9.26,Yes,No
+P0015,Agua Bonafont 1L,Bebidas,Agua,7.57,Yes,No
+P0016,Pepsi 500ml,Bebidas,Pepsi,0.69,Yes,No
+P0017,Jugo Jumex Mango 1L,Bebidas,Jugo,8.43,Yes,No
+P0018,Agua Bonafont 1L,Bebidas,Agua,3.8,Yes,No
+P0019,Agua Bonafont 1L,Bebidas,Agua,1.59,Yes,No
+P0020,Jugo Jumex Mango 1L,Bebidas,Jugo,3.36,Yes,No
+P0021,Agua Bonafont 1L,Bebidas,Agua,4.28,Yes,No
+P0022,Jugo Jumex Mango 1L,Bebidas,Jugo,4.46,Yes,No
+P0023,Coca-Cola 600ml,Bebidas,Coca-Cola,9.39,Yes,No
+P0024,Agua Bonafont 1L,Bebidas,Agua,2.11,Yes,No
+P0025,Agua Bonafont 1L,Bebidas,Agua,9.36,Yes,No
+P0026,Pepsi 500ml,Bebidas,Pepsi,0.64,Yes,No
+P0027,Coca-Cola 600ml,Bebidas,Coca-Cola,9.38,Yes,No
+P0028,Jugo Jumex Mango 1L,Bebidas,Jugo,3.43,Yes,No
+P0029,Agua Bonafont 1L,Bebidas,Agua,5.14,Yes,No
+P0030,Jugo Jumex Mango 1L,Bebidas,Jugo,3.47,Yes,No
+P0031,Jugo Jumex Mango 1L,Bebidas,Jugo,6.88,Yes,No
+P0032,Coca-Cola 600ml,Bebidas,Coca-Cola,3.66,Yes,Yes
+P0033,Agua Bonafont 1L,Bebidas,Agua,8.8,Yes,No
+P0034,Coca-Cola 600ml,Bebidas,Coca-Cola,5.35,Yes,No
+P0035,Jugo Jumex Mango 1L,Bebidas,Jugo,5.29,Yes,No
+P0036,Gatorade Azul 750ml,Bebidas,Gatorade,1.39,Yes,No
+P0037,Coca-Cola 600ml,Bebidas,Coca-Cola,7.36,Yes,No
+P0038,Gatorade Azul 750ml,Bebidas,Gatorade,1.63,Yes,No
+P0039,Gatorade Azul 750ml,Bebidas,Gatorade,2.49,Yes,No
+P0040,Gatorade Azul 750ml,Bebidas,Gatorade,0.61,Yes,No
+P0041,Jugo Jumex Mango 1L,Bebidas,Jugo,2.28,Yes,Yes
+P0042,Gatorade Azul 750ml,Bebidas,Gatorade,3.65,Yes,No
+P0043,Gatorade Azul 750ml,Bebidas,Gatorade,6.16,Yes,No
+P0044,Jugo Jumex Mango 1L,Bebidas,Jugo,4.95,Yes,No
+P0045,Gatorade Azul 750ml,Bebidas,Gatorade,2.01,Yes,No
+P0046,Jugo Jumex Mango 1L,Bebidas,Jugo,4.07,Yes,No
+P0047,Coca-Cola 600ml,Bebidas,Coca-Cola,2.17,Yes,Yes
+P0048,Jugo Jumex Mango 1L,Bebidas,Jugo,6.42,Yes,No
+P0049,Gatorade Azul 750ml,Bebidas,Gatorade,8.12,Yes,No
+P0050,Coca-Cola 600ml,Bebidas,Coca-Cola,4.73,Yes,No
+P0051,Jugo Jumex Mango 1L,Bebidas,Jugo,6.17,Yes,No
+P0052,Agua Bonafont 1L,Bebidas,Agua,7.51,Yes,No
+P0053,Gatorade Azul 750ml,Bebidas,Gatorade,9.78,Yes,No
+P0054,Agua Bonafont 1L,Bebidas,Agua,3.11,Yes,No
+P0055,Coca-Cola 600ml,Bebidas,Coca-Cola,6.56,Yes,No
+P0056,Coca-Cola 600ml,Bebidas,Coca-Cola,3.31,Yes,No
+P0057,Gatorade Azul 750ml,Bebidas,Gatorade,9.39,Yes,No
+P0058,Agua Bonafont 1L,Bebidas,Agua,0.62,Yes,No
+P0059,Coca-Cola 600ml,Bebidas,Coca-Cola,6.47,Yes,Yes
+P0060,Coca-Cola 600ml,Bebidas,Coca-Cola,5.57,Yes,No
+P0061,Gatorade Azul 750ml,Bebidas,Gatorade,1.97,Yes,No
+P0062,Jugo Jumex Mango 1L,Bebidas,Jugo,4.94,Yes,No
+P0063,Gatorade Azul 750ml,Bebidas,Gatorade,9.32,Yes,No
+P0064,Coca-Cola 600ml,Bebidas,Coca-Cola,6.07,Yes,No
+P0065,Pepsi 500ml,Bebidas,Pepsi,6.01,Yes,Yes
+P0066,Agua Bonafont 1L,Bebidas,Agua,1.24,Yes,No
+P0067,Pepsi 500ml,Bebidas,Pepsi,8.03,Yes,No
+P0068,Jugo Jumex Mango 1L,Bebidas,Jugo,3.49,Yes,No
+P0069,Pepsi 500ml,Bebidas,Pepsi,4.8,Yes,No
+P0070,Gatorade Azul 750ml,Bebidas,Gatorade,4.42,Yes,No
+P0071,Gatorade Azul 750ml,Bebidas,Gatorade,1.59,Yes,No
+P0072,Gatorade Azul 750ml,Bebidas,Gatorade,6.19,Yes,Yes
+P0073,Agua Bonafont 1L,Bebidas,Agua,3.8,Yes,Yes
+P0074,Coca-Cola 600ml,Bebidas,Coca-Cola,4.28,Yes,No
+P0075,Pepsi 500ml,Bebidas,Pepsi,9.85,Yes,Yes
+P0076,Agua Bonafont 1L,Bebidas,Agua,7.17,Yes,No
+P0077,Gatorade Azul 750ml,Bebidas,Gatorade,1.39,Yes,No
+P0078,Gatorade Azul 750ml,Bebidas,Gatorade,2.65,Yes,No
+P0079,Agua Bonafont 1L,Bebidas,Agua,8.22,Yes,No
+P0080,Agua Bonafont 1L,Bebidas,Agua,3.52,Yes,No
+P0081,Gatorade Azul 750ml,Bebidas,Gatorade,0.5,Yes,No
+P0082,Jugo Jumex Mango 1L,Bebidas,Jugo,4.28,Yes,No
+P0083,Agua Bonafont 1L,Bebidas,Agua,4.0,Yes,No
+P0084,Jugo Jumex Mango 1L,Bebidas,Jugo,5.37,Yes,No
+P0085,Gatorade Azul 750ml,Bebidas,Gatorade,1.54,Yes,No
+P0086,Pepsi 500ml,Bebidas,Pepsi,7.52,Yes,No
+P0087,Jugo Jumex Mango 1L,Bebidas,Jugo,5.61,Yes,No
+P0088,Coca-Cola 600ml,Bebidas,Coca-Cola,1.61,Yes,No
+P0089,Gatorade Azul 750ml,Bebidas,Gatorade,6.53,Yes,No
+P0090,Jugo Jumex Mango 1L,Bebidas,Jugo,2.81,Yes,Yes
+P0091,Coca-Cola 600ml,Bebidas,Coca-Cola,0.76,Yes,No
+P0092,Jugo Jumex Mango 1L,Bebidas,Jugo,7.84,Yes,No
+P0093,Jugo Jumex Mango 1L,Bebidas,Jugo,9.93,Yes,No
+P0094,Agua Bonafont 1L,Bebidas,Agua,9.99,Yes,No
+P0095,Gatorade Azul 750ml,Bebidas,Gatorade,1.0,Yes,No
+P0096,Jugo Jumex Mango 1L,Bebidas,Jugo,2.65,Yes,No
+P0097,Coca-Cola 600ml,Bebidas,Coca-Cola,7.99,Yes,No
+P0098,Gatorade Azul 750ml,Bebidas,Gatorade,8.12,Yes,No
+P0099,Jugo Jumex Mango 1L,Bebidas,Jugo,2.12,Yes,No
+P0100,Jugo Jumex Mango 1L,Bebidas,Jugo,4.1,Yes,No
+P0101,Gatorade Azul 750ml,Bebidas,Gatorade,3.62,Yes,No
+P0102,Pepsi 500ml,Bebidas,Pepsi,6.15,Yes,No
+P0103,Agua Bonafont 1L,Bebidas,Agua,6.25,Yes,No
+P0104,Pepsi 500ml,Bebidas,Pepsi,7.11,Yes,No
+P0105,Gatorade Azul 750ml,Bebidas,Gatorade,8.44,Yes,No
+P0106,Coca-Cola 600ml,Bebidas,Coca-Cola,0.72,Yes,No
+P0107,Coca-Cola 600ml,Bebidas,Coca-Cola,1.77,Yes,No
+P0108,Jugo Jumex Mango 1L,Bebidas,Jugo,0.74,Yes,No
+P0109,Agua Bonafont 1L,Bebidas,Agua,2.8,Yes,No
+P0110,Coca-Cola 600ml,Bebidas,Coca-Cola,8.97,Yes,No
+P0111,Coca-Cola 600ml,Bebidas,Coca-Cola,3.75,Yes,No
+P0112,Gatorade Azul 750ml,Bebidas,Gatorade,2.37,Yes,No
+P0113,Jugo Jumex Mango 1L,Bebidas,Jugo,9.43,Yes,No
+P0114,Pepsi 500ml,Bebidas,Pepsi,8.83,Yes,No
+P0115,Agua Bonafont 1L,Bebidas,Agua,8.22,Yes,No
+P0116,Jugo Jumex Mango 1L,Bebidas,Jugo,2.08,Yes,No
+P0117,Pepsi 500ml,Bebidas,Pepsi,3.91,Yes,No
+P0118,Gatorade Azul 750ml,Bebidas,Gatorade,6.27,Yes,No
+P0119,Pepsi 500ml,Bebidas,Pepsi,8.61,Yes,No
+P0120,Pepsi 500ml,Bebidas,Pepsi,1.43,Yes,No
+P0121,Coca-Cola 600ml,Bebidas,Coca-Cola,1.28,Yes,No
+P0122,Agua Bonafont 1L,Bebidas,Agua,5.11,Yes,No
+P0123,Pepsi 500ml,Bebidas,Pepsi,9.48,Yes,No
+P0124,Jugo Jumex Mango 1L,Bebidas,Jugo,2.07,Yes,No
+P0125,Gatorade Azul 750ml,Bebidas,Gatorade,7.25,Yes,No
+P0126,Jugo Jumex Mango 1L,Bebidas,Jugo,4.46,Yes,No
+P0127,Coca-Cola 600ml,Bebidas,Coca-Cola,9.53,Yes,No
+P0128,Pepsi 500ml,Bebidas,Pepsi,9.36,Yes,No
+P0129,Jugo Jumex Mango 1L,Bebidas,Jugo,4.23,Yes,No
+P0130,Agua Bonafont 1L,Bebidas,Agua,3.87,Yes,No
+P0131,Jugo Jumex Mango 1L,Bebidas,Jugo,8.88,Yes,No
+P0132,Agua Bonafont 1L,Bebidas,Agua,6.64,Yes,No
+P0133,Jugo Jumex Mango 1L,Bebidas,Jugo,6.49,Yes,No
+P0134,Jugo Jumex Mango 1L,Bebidas,Jugo,6.58,Yes,No
+P0135,Coca-Cola 600ml,Bebidas,Coca-Cola,4.18,Yes,Yes
+P0136,Agua Bonafont 1L,Bebidas,Agua,2.78,Yes,Yes
+P0137,Jugo Jumex Mango 1L,Bebidas,Jugo,4.9,Yes,No
+P0138,Gatorade Azul 750ml,Bebidas,Gatorade,2.43,Yes,No
+P0139,Pepsi 500ml,Bebidas,Pepsi,2.77,Yes,No
+P0140,Jugo Jumex Mango 1L,Bebidas,Jugo,5.4,Yes,No
+P0141,Pepsi 500ml,Bebidas,Pepsi,5.51,Yes,No
+P0142,Gatorade Azul 750ml,Bebidas,Gatorade,9.64,Yes,No
+P0143,Agua Bonafont 1L,Bebidas,Agua,2.82,Yes,No
+P0144,Gatorade Azul 750ml,Bebidas,Gatorade,1.81,Yes,No
+P0145,Jugo Jumex Mango 1L,Bebidas,Jugo,3.59,Yes,No
+P0146,Agua Bonafont 1L,Bebidas,Agua,6.88,Yes,No
+P0147,Gatorade Azul 750ml,Bebidas,Gatorade,6.15,Yes,No
+P0148,Gatorade Azul 750ml,Bebidas,Gatorade,6.95,Yes,No
+P0149,Agua Bonafont 1L,Bebidas,Agua,1.38,Yes,No
+P0150,Agua Bonafont 1L,Bebidas,Agua,4.98,Yes,No
+P0151,Coca-Cola 600ml,Bebidas,Coca-Cola,4.08,Yes,No
+P0152,Agua Bonafont 1L,Bebidas,Agua,8.63,Yes,No
+P0153,Agua Bonafont 1L,Bebidas,Agua,5.79,Yes,No
+P0154,Coca-Cola 600ml,Bebidas,Coca-Cola,6.5,Yes,No
+P0155,Jugo Jumex Mango 1L,Bebidas,Jugo,8.92,Yes,No
+P0156,Gatorade Azul 750ml,Bebidas,Gatorade,4.27,Yes,No
+P0157,Agua Bonafont 1L,Bebidas,Agua,1.8,Yes,No
+P0158,Pepsi 500ml,Bebidas,Pepsi,3.66,Yes,No
+P0159,Jugo Jumex Mango 1L,Bebidas,Jugo,4.19,Yes,No
+P0160,Gatorade Azul 750ml,Bebidas,Gatorade,9.09,Yes,No
+P0161,Coca-Cola 600ml,Bebidas,Coca-Cola,0.52,Yes,Yes
+P0162,Agua Bonafont 1L,Bebidas,Agua,9.59,Yes,Yes
+P0163,Jugo Jumex Mango 1L,Bebidas,Jugo,7.15,Yes,No
+P0164,Gatorade Azul 750ml,Bebidas,Gatorade,3.33,Yes,No
+P0165,Jugo Jumex Mango 1L,Bebidas,Jugo,8.78,Yes,No
+P0166,Pepsi 500ml,Bebidas,Pepsi,1.43,Yes,No
+P0167,Pepsi 500ml,Bebidas,Pepsi,8.72,Yes,No
+P0168,Coca-Cola 600ml,Bebidas,Coca-Cola,9.77,Yes,No
+P0169,Agua Bonafont 1L,Bebidas,Agua,1.95,Yes,Yes
+P0170,Pepsi 500ml,Bebidas,Pepsi,2.08,Yes,No
+P0171,Coca-Cola 600ml,Bebidas,Coca-Cola,3.01,Yes,No
+P0172,Jugo Jumex Mango 1L,Bebidas,Jugo,9.71,Yes,No
+P0173,Jugo Jumex Mango 1L,Bebidas,Jugo,3.11,Yes,No
+P0174,Jugo Jumex Mango 1L,Bebidas,Jugo,8.65,Yes,No
+P0175,Jugo Jumex Mango 1L,Bebidas,Jugo,3.14,Yes,Yes
+P0176,Gatorade Azul 750ml,Bebidas,Gatorade,2.36,Yes,No
+P0177,Agua Bonafont 1L,Bebidas,Agua,4.85,Yes,No
+P0178,Agua Bonafont 1L,Bebidas,Agua,5.4,Yes,No
+P0179,Gatorade Azul 750ml,Bebidas,Gatorade,0.56,Yes,No
+P0180,Coca-Cola 600ml,Bebidas,Coca-Cola,4.37,Yes,No
+P0181,Coca-Cola 600ml,Bebidas,Coca-Cola,2.83,Yes,No
+P0182,Agua Bonafont 1L,Bebidas,Agua,8.82,Yes,No
+P0183,Coca-Cola 600ml,Bebidas,Coca-Cola,5.84,Yes,No
+P0184,Pepsi 500ml,Bebidas,Pepsi,4.44,Yes,No
+P0185,Pepsi 500ml,Bebidas,Pepsi,2.4,Yes,No
+P0186,Coca-Cola 600ml,Bebidas,Coca-Cola,1.17,Yes,No
+P0187,Agua Bonafont 1L,Bebidas,Agua,6.75,Yes,No
+P0188,Coca-Cola 600ml,Bebidas,Coca-Cola,3.44,Yes,No
+P0189,Jugo Jumex Mango 1L,Bebidas,Jugo,5.84,Yes,Yes
+P0190,Pepsi 500ml,Bebidas,Pepsi,7.69,Yes,No
+P0191,Coca-Cola 600ml,Bebidas,Coca-Cola,6.81,Yes,No
+P0192,Pepsi 500ml,Bebidas,Pepsi,8.08,Yes,No
+P0193,Pepsi 500ml,Bebidas,Pepsi,8.03,Yes,No
+P0194,Pepsi 500ml,Bebidas,Pepsi,4.59,Yes,No
+P0195,Agua Bonafont 1L,Bebidas,Agua,4.84,Yes,No
+P0196,Agua Bonafont 1L,Bebidas,Agua,5.44,Yes,No
+P0197,Jugo Jumex Mango 1L,Bebidas,Jugo,2.62,Yes,Yes
+P0198,Coca-Cola 600ml,Bebidas,Coca-Cola,8.04,Yes,No
+P0199,Jugo Jumex Mango 1L,Bebidas,Jugo,5.97,Yes,No
+P0200,Jugo Jumex Mango 1L,Bebidas,Jugo,3.59,Yes,No
+P0201,Barra Nature Valley,Snacks,Barra,1.85,Yes,Yes
+P0202,Barra Nature Valley,Snacks,Barra,2.19,Yes,Yes
+P0203,Barra Nature Valley,Snacks,Barra,0.65,Yes,No
+P0204,Galletas Oreo,Snacks,Galletas,6.22,Yes,No
+P0205,Barra Nature Valley,Snacks,Barra,8.9,Yes,No
+P0206,Lays Clásicas 170g,Snacks,Lays,2.92,Yes,No
+P0207,Cheetos Queso 150g,Snacks,Cheetos,1.47,Yes,No
+P0208,Galletas Oreo,Snacks,Galletas,8.73,Yes,No
+P0209,Cheetos Queso 150g,Snacks,Cheetos,9.67,Yes,No
+P0210,Galletas Oreo,Snacks,Galletas,6.3,Yes,No
+P0211,Lays Clásicas 170g,Snacks,Lays,9.22,Yes,No
+P0212,Galletas Oreo,Snacks,Galletas,4.24,Yes,No
+P0213,Pringles Original,Snacks,Pringles,2.68,Yes,No
+P0214,Pringles Original,Snacks,Pringles,3.73,Yes,No
+P0215,Lays Clásicas 170g,Snacks,Lays,4.2,Yes,No
+P0216,Barra Nature Valley,Snacks,Barra,4.1,Yes,No
+P0217,Barra Nature Valley,Snacks,Barra,9.46,Yes,No
+P0218,Barra Nature Valley,Snacks,Barra,5.57,Yes,No
+P0219,Lays Clásicas 170g,Snacks,Lays,6.41,Yes,No
+P0220,Pringles Original,Snacks,Pringles,4.79,Yes,No
+P0221,Lays Clásicas 170g,Snacks,Lays,3.3,Yes,No
+P0222,Galletas Oreo,Snacks,Galletas,9.28,Yes,No
+P0223,Cheetos Queso 150g,Snacks,Cheetos,6.62,Yes,No
+P0224,Galletas Oreo,Snacks,Galletas,1.74,Yes,No
+P0225,Pringles Original,Snacks,Pringles,7.04,Yes,No
+P0226,Cheetos Queso 150g,Snacks,Cheetos,1.24,Yes,Yes
+P0227,Galletas Oreo,Snacks,Galletas,7.55,Yes,No
+P0228,Lays Clásicas 170g,Snacks,Lays,9.16,Yes,No
+P0229,Galletas Oreo,Snacks,Galletas,5.05,Yes,No
+P0230,Pringles Original,Snacks,Pringles,9.7,Yes,No
+P0231,Galletas Oreo,Snacks,Galletas,3.29,Yes,No
+P0232,Cheetos Queso 150g,Snacks,Cheetos,3.14,Yes,No
+P0233,Pringles Original,Snacks,Pringles,1.23,Yes,No
+P0234,Pringles Original,Snacks,Pringles,6.26,Yes,No
+P0235,Galletas Oreo,Snacks,Galletas,0.61,Yes,Yes
+P0236,Lays Clásicas 170g,Snacks,Lays,8.06,Yes,No
+P0237,Lays Clásicas 170g,Snacks,Lays,5.45,Yes,Yes
+P0238,Cheetos Queso 150g,Snacks,Cheetos,7.34,Yes,No
+P0239,Barra Nature Valley,Snacks,Barra,6.36,Yes,No
+P0240,Lays Clásicas 170g,Snacks,Lays,3.74,Yes,No
+P0241,Cheetos Queso 150g,Snacks,Cheetos,7.28,Yes,No
+P0242,Cheetos Queso 150g,Snacks,Cheetos,1.82,Yes,No
+P0243,Lays Clásicas 170g,Snacks,Lays,1.89,Yes,No
+P0244,Galletas Oreo,Snacks,Galletas,9.63,Yes,No
+P0245,Barra Nature Valley,Snacks,Barra,6.1,Yes,No
+P0246,Cheetos Queso 150g,Snacks,Cheetos,7.29,Yes,No
+P0247,Barra Nature Valley,Snacks,Barra,9.29,Yes,No
+P0248,Galletas Oreo,Snacks,Galletas,5.76,Yes,No
+P0249,Galletas Oreo,Snacks,Galletas,6.98,Yes,No
+P0250,Galletas Oreo,Snacks,Galletas,1.24,Yes,No
+P0251,Pringles Original,Snacks,Pringles,6.56,Yes,No
+P0252,Lays Clásicas 170g,Snacks,Lays,9.6,Yes,No
+P0253,Pringles Original,Snacks,Pringles,5.87,Yes,No
+P0254,Cheetos Queso 150g,Snacks,Cheetos,5.3,Yes,No
+P0255,Pringles Original,Snacks,Pringles,8.85,Yes,No
+P0256,Cheetos Queso 150g,Snacks,Cheetos,4.28,Yes,No
+P0257,Barra Nature Valley,Snacks,Barra,2.72,Yes,No
+P0258,Lays Clásicas 170g,Snacks,Lays,6.23,Yes,No
+P0259,Cheetos Queso 150g,Snacks,Cheetos,0.77,Yes,No
+P0260,Pringles Original,Snacks,Pringles,5.81,Yes,No
+P0261,Lays Clásicas 170g,Snacks,Lays,4.67,Yes,No
+P0262,Galletas Oreo,Snacks,Galletas,0.62,Yes,No
+P0263,Pringles Original,Snacks,Pringles,6.95,Yes,No
+P0264,Cheetos Queso 150g,Snacks,Cheetos,4.55,Yes,No
+P0265,Cheetos Queso 150g,Snacks,Cheetos,4.14,Yes,No
+P0266,Barra Nature Valley,Snacks,Barra,4.46,Yes,Yes
+P0267,Pringles Original,Snacks,Pringles,8.79,Yes,No
+P0268,Pringles Original,Snacks,Pringles,9.86,Yes,No
+P0269,Galletas Oreo,Snacks,Galletas,9.5,Yes,No
+P0270,Lays Clásicas 170g,Snacks,Lays,4.98,Yes,Yes
+P0271,Galletas Oreo,Snacks,Galletas,7.2,Yes,No
+P0272,Barra Nature Valley,Snacks,Barra,5.23,Yes,No
+P0273,Galletas Oreo,Snacks,Galletas,9.91,Yes,No
+P0274,Pringles Original,Snacks,Pringles,8.59,Yes,No
+P0275,Pringles Original,Snacks,Pringles,3.64,Yes,No
+P0276,Galletas Oreo,Snacks,Galletas,6.06,Yes,No
+P0277,Cheetos Queso 150g,Snacks,Cheetos,5.53,Yes,No
+P0278,Pringles Original,Snacks,Pringles,6.12,Yes,No
+P0279,Galletas Oreo,Snacks,Galletas,3.79,Yes,No
+P0280,Galletas Oreo,Snacks,Galletas,6.84,Yes,No
+P0281,Pringles Original,Snacks,Pringles,8.25,Yes,No
+P0282,Barra Nature Valley,Snacks,Barra,6.2,Yes,No
+P0283,Galletas Oreo,Snacks,Galletas,8.0,Yes,No
+P0284,Lays Clásicas 170g,Snacks,Lays,1.32,Yes,No
+P0285,Pringles Original,Snacks,Pringles,3.92,Yes,No
+P0286,Pringles Original,Snacks,Pringles,9.43,Yes,No
+P0287,Cheetos Queso 150g,Snacks,Cheetos,4.39,Yes,No
+P0288,Galletas Oreo,Snacks,Galletas,8.54,Yes,No
+P0289,Galletas Oreo,Snacks,Galletas,5.69,Yes,No
+P0290,Pringles Original,Snacks,Pringles,1.68,Yes,No
+P0291,Pringles Original,Snacks,Pringles,5.02,Yes,No
+P0292,Galletas Oreo,Snacks,Galletas,9.03,Yes,No
+P0293,Lays Clásicas 170g,Snacks,Lays,2.16,Yes,No
+P0294,Pringles Original,Snacks,Pringles,4.0,Yes,No
+P0295,Galletas Oreo,Snacks,Galletas,3.37,Yes,No
+P0296,Pringles Original,Snacks,Pringles,7.67,Yes,No
+P0297,Barra Nature Valley,Snacks,Barra,0.79,Yes,No
+P0298,Cheetos Queso 150g,Snacks,Cheetos,0.76,Yes,Yes
+P0299,Galletas Oreo,Snacks,Galletas,9.54,Yes,No
+P0300,Cheetos Queso 150g,Snacks,Cheetos,7.97,Yes,No
+P0301,Cheetos Queso 150g,Snacks,Cheetos,8.56,Yes,No
+P0302,Barra Nature Valley,Snacks,Barra,0.86,Yes,No
+P0303,Lays Clásicas 170g,Snacks,Lays,4.61,Yes,No
+P0304,Barra Nature Valley,Snacks,Barra,8.82,Yes,No
+P0305,Pringles Original,Snacks,Pringles,9.68,Yes,No
+P0306,Cheetos Queso 150g,Snacks,Cheetos,7.1,Yes,No
+P0307,Pringles Original,Snacks,Pringles,6.59,Yes,No
+P0308,Lays Clásicas 170g,Snacks,Lays,8.05,Yes,Yes
+P0309,Barra Nature Valley,Snacks,Barra,2.61,Yes,No
+P0310,Barra Nature Valley,Snacks,Barra,1.29,Yes,No
+P0311,Barra Nature Valley,Snacks,Barra,9.59,Yes,No
+P0312,Lays Clásicas 170g,Snacks,Lays,7.16,Yes,No
+P0313,Barra Nature Valley,Snacks,Barra,7.94,Yes,No
+P0314,Barra Nature Valley,Snacks,Barra,8.16,Yes,No
+P0315,Galletas Oreo,Snacks,Galletas,4.17,Yes,Yes
+P0316,Pringles Original,Snacks,Pringles,2.43,Yes,No
+P0317,Galletas Oreo,Snacks,Galletas,5.38,Yes,Yes
+P0318,Galletas Oreo,Snacks,Galletas,7.39,Yes,No
+P0319,Lays Clásicas 170g,Snacks,Lays,7.93,Yes,No
+P0320,Pringles Original,Snacks,Pringles,2.19,Yes,No
+P0321,Lays Clásicas 170g,Snacks,Lays,3.11,Yes,No
+P0322,Galletas Oreo,Snacks,Galletas,3.66,Yes,No
+P0323,Lays Clásicas 170g,Snacks,Lays,5.93,Yes,No
+P0324,Galletas Oreo,Snacks,Galletas,3.85,Yes,No
+P0325,Cheetos Queso 150g,Snacks,Cheetos,2.89,Yes,No
+P0326,Barra Nature Valley,Snacks,Barra,6.33,Yes,No
+P0327,Cheetos Queso 150g,Snacks,Cheetos,6.42,Yes,No
+P0328,Pringles Original,Snacks,Pringles,0.51,Yes,No
+P0329,Lays Clásicas 170g,Snacks,Lays,7.61,Yes,No
+P0330,Barra Nature Valley,Snacks,Barra,3.03,Yes,Yes
+P0331,Barra Nature Valley,Snacks,Barra,6.91,Yes,No
+P0332,Pringles Original,Snacks,Pringles,5.33,Yes,No
+P0333,Galletas Oreo,Snacks,Galletas,4.59,Yes,No
+P0334,Cheetos Queso 150g,Snacks,Cheetos,7.82,Yes,No
+P0335,Cheetos Queso 150g,Snacks,Cheetos,9.0,Yes,No
+P0336,Barra Nature Valley,Snacks,Barra,4.0,Yes,No
+P0337,Cheetos Queso 150g,Snacks,Cheetos,1.88,Yes,No
+P0338,Cheetos Queso 150g,Snacks,Cheetos,8.92,Yes,No
+P0339,Lays Clásicas 170g,Snacks,Lays,9.85,Yes,No
+P0340,Cheetos Queso 150g,Snacks,Cheetos,1.5,Yes,No
+P0341,Cheetos Queso 150g,Snacks,Cheetos,8.62,Yes,No
+P0342,Cheetos Queso 150g,Snacks,Cheetos,5.55,Yes,No
+P0343,Galletas Oreo,Snacks,Galletas,5.39,Yes,No
+P0344,Cheetos Queso 150g,Snacks,Cheetos,9.71,Yes,No
+P0345,Lays Clásicas 170g,Snacks,Lays,5.11,Yes,Yes
+P0346,Pringles Original,Snacks,Pringles,9.45,Yes,No
+P0347,Pringles Original,Snacks,Pringles,7.38,Yes,No
+P0348,Lays Clásicas 170g,Snacks,Lays,2.3,Yes,No
+P0349,Lays Clásicas 170g,Snacks,Lays,8.39,Yes,No
+P0350,Lays Clásicas 170g,Snacks,Lays,7.67,Yes,No
+P0351,Tortillas de Harina 500g,Panadería,Tortillas,3.1,Yes,No
+P0352,Tortillas de Harina 500g,Panadería,Tortillas,0.57,Yes,No
+P0353,Tortillas de Harina 500g,Panadería,Tortillas,1.36,Yes,Yes
+P0354,Bimbo Pan Blanco,Panadería,Bimbo,1.66,Yes,No
+P0355,Pan Integral Oroweat,Panadería,Pan,4.56,Yes,No
+P0356,Pan Integral Oroweat,Panadería,Pan,9.92,Yes,No
+P0357,Bimbo Pan Blanco,Panadería,Bimbo,2.93,Yes,Yes
+P0358,Bimbo Pan Blanco,Panadería,Bimbo,4.01,Yes,No
+P0359,Pan Molido Great Value,Panadería,Pan,9.59,Yes,No
+P0360,Tortillas de Harina 500g,Panadería,Tortillas,8.15,Yes,No
+P0361,Pan Molido Great Value,Panadería,Pan,6.18,Yes,No
+P0362,Bimbo Pan Blanco,Panadería,Bimbo,1.49,Yes,No
+P0363,Pan Molido Great Value,Panadería,Pan,8.8,Yes,No
+P0364,Pan Integral Oroweat,Panadería,Pan,1.34,Yes,No
+P0365,Tortillas de Harina 500g,Panadería,Tortillas,4.74,Yes,Yes
+P0366,Pan Molido Great Value,Panadería,Pan,0.96,Yes,No
+P0367,Bimbo Pan Blanco,Panadería,Bimbo,6.5,Yes,No
+P0368,Pan Molido Great Value,Panadería,Pan,4.71,Yes,Yes
+P0369,Pan Integral Oroweat,Panadería,Pan,1.87,Yes,No
+P0370,Pan Integral Oroweat,Panadería,Pan,4.35,Yes,No
+P0371,Pan Integral Oroweat,Panadería,Pan,3.45,Yes,No
+P0372,Tortillas de Harina 500g,Panadería,Tortillas,6.46,Yes,No
+P0373,Pan Integral Oroweat,Panadería,Pan,2.66,Yes,No
+P0374,Bimbo Pan Blanco,Panadería,Bimbo,5.02,Yes,No
+P0375,Tortillas de Harina 500g,Panadería,Tortillas,3.52,Yes,Yes
+P0376,Bimbo Pan Blanco,Panadería,Bimbo,7.99,Yes,No
+P0377,Bimbo Pan Blanco,Panadería,Bimbo,3.88,Yes,No
+P0378,Bimbo Pan Blanco,Panadería,Bimbo,4.05,Yes,No
+P0379,Tortillas de Harina 500g,Panadería,Tortillas,9.49,Yes,No
+P0380,Tortillas de Harina 500g,Panadería,Tortillas,4.98,Yes,Yes
+P0381,Pan Molido Great Value,Panadería,Pan,7.27,Yes,No
+P0382,Bimbo Pan Blanco,Panadería,Bimbo,5.7,Yes,No
+P0383,Bimbo Pan Blanco,Panadería,Bimbo,9.92,Yes,No
+P0384,Pan Molido Great Value,Panadería,Pan,4.87,Yes,Yes
+P0385,Pan Molido Great Value,Panadería,Pan,8.11,Yes,No
+P0386,Pan Molido Great Value,Panadería,Pan,8.97,Yes,No
+P0387,Pan Molido Great Value,Panadería,Pan,9.81,Yes,No
+P0388,Pan Molido Great Value,Panadería,Pan,4.64,Yes,No
+P0389,Pan Molido Great Value,Panadería,Pan,5.2,Yes,No
+P0390,Pan Integral Oroweat,Panadería,Pan,8.19,Yes,No
+P0391,Pan Molido Great Value,Panadería,Pan,1.55,Yes,No
+P0392,Pan Integral Oroweat,Panadería,Pan,2.74,Yes,No
+P0393,Bimbo Pan Blanco,Panadería,Bimbo,3.07,Yes,No
+P0394,Pan Molido Great Value,Panadería,Pan,4.15,Yes,No
+P0395,Pan Integral Oroweat,Panadería,Pan,7.34,Yes,No
+P0396,Pan Molido Great Value,Panadería,Pan,7.8,Yes,No
+P0397,Pan Integral Oroweat,Panadería,Pan,8.16,Yes,No
+P0398,Bimbo Pan Blanco,Panadería,Bimbo,8.67,Yes,No
+P0399,Bimbo Pan Blanco,Panadería,Bimbo,2.84,Yes,No
+P0400,Pan Integral Oroweat,Panadería,Pan,7.77,Yes,No
+P0401,Pan Molido Great Value,Panadería,Pan,3.96,Yes,No
+P0402,Bimbo Pan Blanco,Panadería,Bimbo,9.49,Yes,No
+P0403,Pan Molido Great Value,Panadería,Pan,9.58,Yes,No
+P0404,Tortillas de Harina 500g,Panadería,Tortillas,3.2,Yes,No
+P0405,Bimbo Pan Blanco,Panadería,Bimbo,0.97,Yes,No
+P0406,Pan Molido Great Value,Panadería,Pan,1.73,Yes,No
+P0407,Bimbo Pan Blanco,Panadería,Bimbo,7.38,Yes,Yes
+P0408,Bimbo Pan Blanco,Panadería,Bimbo,1.41,Yes,No
+P0409,Pan Molido Great Value,Panadería,Pan,8.31,Yes,No
+P0410,Pan Molido Great Value,Panadería,Pan,5.53,Yes,No
+P0411,Bimbo Pan Blanco,Panadería,Bimbo,3.36,Yes,No
+P0412,Bimbo Pan Blanco,Panadería,Bimbo,2.84,Yes,No
+P0413,Tortillas de Harina 500g,Panadería,Tortillas,6.81,Yes,No
+P0414,Pan Integral Oroweat,Panadería,Pan,2.77,Yes,No
+P0415,Pan Molido Great Value,Panadería,Pan,1.38,Yes,Yes
+P0416,Tortillas de Harina 500g,Panadería,Tortillas,7.83,Yes,No
+P0417,Pan Molido Great Value,Panadería,Pan,6.07,Yes,No
+P0418,Pan Molido Great Value,Panadería,Pan,2.68,Yes,No
+P0419,Bimbo Pan Blanco,Panadería,Bimbo,9.83,Yes,No
+P0420,Bimbo Pan Blanco,Panadería,Bimbo,5.58,Yes,No
+P0421,Bimbo Pan Blanco,Panadería,Bimbo,8.69,Yes,No
+P0422,Tortillas de Harina 500g,Panadería,Tortillas,0.98,Yes,No
+P0423,Pan Integral Oroweat,Panadería,Pan,8.67,Yes,No
+P0424,Pan Molido Great Value,Panadería,Pan,5.15,Yes,No
+P0425,Pan Molido Great Value,Panadería,Pan,2.51,Yes,No
+P0426,Pan Integral Oroweat,Panadería,Pan,3.55,Yes,No
+P0427,Pan Molido Great Value,Panadería,Pan,2.11,Yes,Yes
+P0428,Pan Molido Great Value,Panadería,Pan,8.38,Yes,No
+P0429,Pan Integral Oroweat,Panadería,Pan,0.57,Yes,No
+P0430,Pan Molido Great Value,Panadería,Pan,5.66,Yes,No
+P0431,Pan Molido Great Value,Panadería,Pan,4.31,Yes,No
+P0432,Pan Molido Great Value,Panadería,Pan,3.17,Yes,No
+P0433,Pan Integral Oroweat,Panadería,Pan,1.89,Yes,No
+P0434,Pan Integral Oroweat,Panadería,Pan,9.3,Yes,No
+P0435,Pan Integral Oroweat,Panadería,Pan,9.73,Yes,No
+P0436,Bimbo Pan Blanco,Panadería,Bimbo,1.81,Yes,No
+P0437,Tortillas de Harina 500g,Panadería,Tortillas,4.61,Yes,No
+P0438,Pan Molido Great Value,Panadería,Pan,2.25,Yes,No
+P0439,Pan Molido Great Value,Panadería,Pan,9.02,Yes,No
+P0440,Pan Integral Oroweat,Panadería,Pan,7.14,Yes,No
+P0441,Pan Molido Great Value,Panadería,Pan,3.57,Yes,No
+P0442,Tortillas de Harina 500g,Panadería,Tortillas,5.26,Yes,No
+P0443,Pan Molido Great Value,Panadería,Pan,6.07,Yes,No
+P0444,Tortillas de Harina 500g,Panadería,Tortillas,2.77,Yes,No
+P0445,Bimbo Pan Blanco,Panadería,Bimbo,8.76,Yes,No
+P0446,Bimbo Pan Blanco,Panadería,Bimbo,9.9,Yes,No
+P0447,Tortillas de Harina 500g,Panadería,Tortillas,4.04,Yes,No
+P0448,Bimbo Pan Blanco,Panadería,Bimbo,5.82,Yes,No
+P0449,Pan Molido Great Value,Panadería,Pan,2.5,Yes,Yes
+P0450,Pan Molido Great Value,Panadería,Pan,5.57,Yes,No
+P0451,Queso Manchego NocheBuena,Lácteos,Queso,1.38,Yes,No
+P0452,Queso Manchego NocheBuena,Lácteos,Queso,2.77,Yes,No
+P0453,Queso Manchego NocheBuena,Lácteos,Queso,2.65,Yes,No
+P0454,Queso Manchego NocheBuena,Lácteos,Queso,9.86,Yes,No
+P0455,Queso Manchego NocheBuena,Lácteos,Queso,0.87,Yes,Yes
+P0456,Danone Yogurt Fresa,Lácteos,Danone,9.99,Yes,Yes
+P0457,Queso Manchego NocheBuena,Lácteos,Queso,9.49,Yes,No
+P0458,Queso Manchego NocheBuena,Lácteos,Queso,3.7,Yes,No
+P0459,Danone Yogurt Fresa,Lácteos,Danone,2.02,Yes,No
+P0460,Queso Manchego NocheBuena,Lácteos,Queso,8.67,Yes,No
+P0461,Queso Manchego NocheBuena,Lácteos,Queso,1.02,Yes,No
+P0462,Leche Alpura 1L,Lácteos,Leche,5.87,Yes,No
+P0463,Danone Yogurt Fresa,Lácteos,Danone,4.03,Yes,No
+P0464,Danone Yogurt Fresa,Lácteos,Danone,1.03,Yes,No
+P0465,Yogurt Griego Yoplait,Lácteos,Yogurt,4.43,Yes,No
+P0466,Yogurt Griego Yoplait,Lácteos,Yogurt,8.08,Yes,No
+P0467,Danone Yogurt Fresa,Lácteos,Danone,7.66,Yes,No
+P0468,Leche Alpura 1L,Lácteos,Leche,2.82,Yes,No
+P0469,Yogurt Griego Yoplait,Lácteos,Yogurt,6.29,Yes,Yes
+P0470,Queso Manchego NocheBuena,Lácteos,Queso,2.33,Yes,Yes
+P0471,Danone Yogurt Fresa,Lácteos,Danone,6.5,Yes,No
+P0472,Yogurt Griego Yoplait,Lácteos,Yogurt,6.64,Yes,No
+P0473,Yogurt Griego Yoplait,Lácteos,Yogurt,3.37,Yes,No
+P0474,Danone Yogurt Fresa,Lácteos,Danone,6.1,Yes,No
+P0475,Leche Alpura 1L,Lácteos,Leche,5.07,Yes,No
+P0476,Leche Alpura 1L,Lácteos,Leche,3.78,Yes,No
+P0477,Leche Alpura 1L,Lácteos,Leche,2.22,Yes,No
+P0478,Leche Alpura 1L,Lácteos,Leche,8.87,Yes,No
+P0479,Leche Alpura 1L,Lácteos,Leche,2.64,Yes,No
+P0480,Leche Alpura 1L,Lácteos,Leche,5.55,Yes,No
+P0481,Danone Yogurt Fresa,Lácteos,Danone,3.85,Yes,No
+P0482,Leche Alpura 1L,Lácteos,Leche,8.35,Yes,No
+P0483,Leche Alpura 1L,Lácteos,Leche,9.71,Yes,No
+P0484,Queso Manchego NocheBuena,Lácteos,Queso,6.09,Yes,No
+P0485,Queso Manchego NocheBuena,Lácteos,Queso,4.54,Yes,No
+P0486,Danone Yogurt Fresa,Lácteos,Danone,0.78,Yes,Yes
+P0487,Queso Manchego NocheBuena,Lácteos,Queso,1.54,Yes,No
+P0488,Yogurt Griego Yoplait,Lácteos,Yogurt,7.18,Yes,No
+P0489,Leche Alpura 1L,Lácteos,Leche,2.71,Yes,No
+P0490,Queso Manchego NocheBuena,Lácteos,Queso,9.7,Yes,No
+P0491,Yogurt Griego Yoplait,Lácteos,Yogurt,1.22,Yes,No
+P0492,Leche Alpura 1L,Lácteos,Leche,3.73,Yes,No
+P0493,Leche Alpura 1L,Lácteos,Leche,5.54,Yes,No
+P0494,Yogurt Griego Yoplait,Lácteos,Yogurt,5.58,Yes,Yes
+P0495,Yogurt Griego Yoplait,Lácteos,Yogurt,6.59,Yes,No
+P0496,Queso Manchego NocheBuena,Lácteos,Queso,9.29,Yes,No
+P0497,Yogurt Griego Yoplait,Lácteos,Yogurt,2.64,Yes,No
+P0498,Danone Yogurt Fresa,Lácteos,Danone,8.87,Yes,No
+P0499,Leche Alpura 1L,Lácteos,Leche,8.26,Yes,No
+P0500,Queso Manchego NocheBuena,Lácteos,Queso,3.38,Yes,No
+P0501,Danone Yogurt Fresa,Lácteos,Danone,5.58,Yes,No
+P0502,Leche Alpura 1L,Lácteos,Leche,8.14,Yes,No
+P0503,Yogurt Griego Yoplait,Lácteos,Yogurt,2.82,Yes,No
+P0504,Queso Manchego NocheBuena,Lácteos,Queso,6.26,Yes,No
+P0505,Queso Manchego NocheBuena,Lácteos,Queso,2.64,Yes,No
+P0506,Danone Yogurt Fresa,Lácteos,Danone,1.49,Yes,No
+P0507,Danone Yogurt Fresa,Lácteos,Danone,6.73,Yes,No
+P0508,Queso Manchego NocheBuena,Lácteos,Queso,9.53,Yes,No
+P0509,Danone Yogurt Fresa,Lácteos,Danone,6.96,Yes,No
+P0510,Yogurt Griego Yoplait,Lácteos,Yogurt,2.9,Yes,No
+P0511,Danone Yogurt Fresa,Lácteos,Danone,4.23,Yes,No
+P0512,Queso Manchego NocheBuena,Lácteos,Queso,8.72,Yes,No
+P0513,Leche Alpura 1L,Lácteos,Leche,7.96,Yes,No
+P0514,Queso Manchego NocheBuena,Lácteos,Queso,3.94,Yes,Yes
+P0515,Yogurt Griego Yoplait,Lácteos,Yogurt,6.21,Yes,No
+P0516,Yogurt Griego Yoplait,Lácteos,Yogurt,7.96,Yes,No
+P0517,Yogurt Griego Yoplait,Lácteos,Yogurt,3.94,Yes,No
+P0518,Yogurt Griego Yoplait,Lácteos,Yogurt,2.32,Yes,No
+P0519,Danone Yogurt Fresa,Lácteos,Danone,8.05,Yes,No
+P0520,Leche Alpura 1L,Lácteos,Leche,3.87,Yes,No
+P0521,Queso Manchego NocheBuena,Lácteos,Queso,4.81,Yes,Yes
+P0522,Danone Yogurt Fresa,Lácteos,Danone,5.35,Yes,No
+P0523,Yogurt Griego Yoplait,Lácteos,Yogurt,3.92,Yes,No
+P0524,Danone Yogurt Fresa,Lácteos,Danone,8.01,Yes,No
+P0525,Leche Alpura 1L,Lácteos,Leche,0.73,Yes,No
+P0526,Yogurt Griego Yoplait,Lácteos,Yogurt,1.35,Yes,No
+P0527,Leche Alpura 1L,Lácteos,Leche,1.98,Yes,Yes
+P0528,Yogurt Griego Yoplait,Lácteos,Yogurt,0.91,Yes,No
+P0529,Leche Alpura 1L,Lácteos,Leche,9.58,Yes,No
+P0530,Queso Manchego NocheBuena,Lácteos,Queso,3.47,Yes,No
+P0531,Danone Yogurt Fresa,Lácteos,Danone,2.82,Yes,Yes
+P0532,Leche Alpura 1L,Lácteos,Leche,4.64,Yes,No
+P0533,Danone Yogurt Fresa,Lácteos,Danone,0.83,Yes,No
+P0534,Queso Manchego NocheBuena,Lácteos,Queso,1.55,Yes,No
+P0535,Danone Yogurt Fresa,Lácteos,Danone,1.42,Yes,Yes
+P0536,Danone Yogurt Fresa,Lácteos,Danone,7.05,Yes,No
+P0537,Danone Yogurt Fresa,Lácteos,Danone,9.52,Yes,No
+P0538,Danone Yogurt Fresa,Lácteos,Danone,4.38,Yes,No
+P0539,Queso Manchego NocheBuena,Lácteos,Queso,2.91,Yes,No
+P0540,Queso Manchego NocheBuena,Lácteos,Queso,5.42,Yes,No
+P0541,Danone Yogurt Fresa,Lácteos,Danone,6.95,Yes,No
+P0542,Leche Alpura 1L,Lácteos,Leche,8.1,Yes,No
+P0543,Danone Yogurt Fresa,Lácteos,Danone,6.47,Yes,No
+P0544,Leche Alpura 1L,Lácteos,Leche,0.78,Yes,No
+P0545,Danone Yogurt Fresa,Lácteos,Danone,2.09,Yes,No
+P0546,Danone Yogurt Fresa,Lácteos,Danone,9.44,Yes,No
+P0547,Yogurt Griego Yoplait,Lácteos,Yogurt,6.72,Yes,No
+P0548,Queso Manchego NocheBuena,Lácteos,Queso,7.55,Yes,No
+P0549,Leche Alpura 1L,Lácteos,Leche,5.69,Yes,No
+P0550,Danone Yogurt Fresa,Lácteos,Danone,6.96,Yes,Yes
+P0551,Cloro Cloralex 1L,Limpieza,Cloro,2.49,No,No
+P0552,Detergente Ariel 1kg,Limpieza,Detergente,5.46,No,No
+P0553,Suavitel 850ml,Limpieza,Suavitel,4.63,No,No
+P0554,Suavitel 850ml,Limpieza,Suavitel,4.12,No,No
+P0555,Suavitel 850ml,Limpieza,Suavitel,3.01,No,No
+P0556,Detergente Ariel 1kg,Limpieza,Detergente,7.6,No,No
+P0557,Jabón Zote Blanco,Limpieza,Jabón,5.4,No,No
+P0558,Jabón Zote Blanco,Limpieza,Jabón,3.61,No,No
+P0559,Detergente Ariel 1kg,Limpieza,Detergente,8.58,No,No
+P0560,Jabón Zote Blanco,Limpieza,Jabón,9.46,No,No
+P0561,Jabón Zote Blanco,Limpieza,Jabón,8.95,No,No
+P0562,Detergente Ariel 1kg,Limpieza,Detergente,9.62,No,No
+P0563,Detergente Ariel 1kg,Limpieza,Detergente,9.68,No,No
+P0564,Detergente Ariel 1kg,Limpieza,Detergente,7.07,No,No
+P0565,Suavitel 850ml,Limpieza,Suavitel,1.04,No,No
+P0566,Cloro Cloralex 1L,Limpieza,Cloro,6.56,No,No
+P0567,Detergente Ariel 1kg,Limpieza,Detergente,4.89,No,No
+P0568,Detergente Ariel 1kg,Limpieza,Detergente,1.7,No,No
+P0569,Jabón Zote Blanco,Limpieza,Jabón,5.81,No,No
+P0570,Cloro Cloralex 1L,Limpieza,Cloro,5.66,No,No
+P0571,Suavitel 850ml,Limpieza,Suavitel,6.44,No,No
+P0572,Suavitel 850ml,Limpieza,Suavitel,3.53,No,No
+P0573,Detergente Ariel 1kg,Limpieza,Detergente,7.18,No,No
+P0574,Suavitel 850ml,Limpieza,Suavitel,6.69,No,No
+P0575,Cloro Cloralex 1L,Limpieza,Cloro,3.18,No,No
+P0576,Suavitel 850ml,Limpieza,Suavitel,8.27,No,No
+P0577,Cloro Cloralex 1L,Limpieza,Cloro,3.89,No,No
+P0578,Suavitel 850ml,Limpieza,Suavitel,5.83,No,No
+P0579,Suavitel 850ml,Limpieza,Suavitel,4.54,No,Yes
+P0580,Suavitel 850ml,Limpieza,Suavitel,4.04,No,No
+P0581,Suavitel 850ml,Limpieza,Suavitel,9.55,No,No
+P0582,Detergente Ariel 1kg,Limpieza,Detergente,4.58,No,No
+P0583,Cloro Cloralex 1L,Limpieza,Cloro,7.51,No,No
+P0584,Cloro Cloralex 1L,Limpieza,Cloro,7.31,No,No
+P0585,Jabón Zote Blanco,Limpieza,Jabón,4.44,No,No
+P0586,Suavitel 850ml,Limpieza,Suavitel,9.75,No,No
+P0587,Cloro Cloralex 1L,Limpieza,Cloro,5.65,No,No
+P0588,Jabón Zote Blanco,Limpieza,Jabón,8.36,No,No
+P0589,Jabón Zote Blanco,Limpieza,Jabón,5.34,No,No
+P0590,Jabón Zote Blanco,Limpieza,Jabón,2.57,No,No
+P0591,Jabón Zote Blanco,Limpieza,Jabón,1.24,No,No
+P0592,Suavitel 850ml,Limpieza,Suavitel,9.22,No,No
+P0593,Jabón Zote Blanco,Limpieza,Jabón,5.14,No,No
+P0594,Cloro Cloralex 1L,Limpieza,Cloro,7.6,No,No
+P0595,Cloro Cloralex 1L,Limpieza,Cloro,1.45,No,No
+P0596,Detergente Ariel 1kg,Limpieza,Detergente,8.95,No,No
+P0597,Jabón Zote Blanco,Limpieza,Jabón,8.73,No,No
+P0598,Suavitel 850ml,Limpieza,Suavitel,1.62,No,No
+P0599,Cloro Cloralex 1L,Limpieza,Cloro,6.12,No,No
+P0600,Suavitel 850ml,Limpieza,Suavitel,5.14,No,No
+P0601,Detergente Ariel 1kg,Limpieza,Detergente,2.6,No,No
+P0602,Detergente Ariel 1kg,Limpieza,Detergente,1.48,No,No
+P0603,Cloro Cloralex 1L,Limpieza,Cloro,5.03,No,No
+P0604,Detergente Ariel 1kg,Limpieza,Detergente,6.92,No,Yes
+P0605,Cloro Cloralex 1L,Limpieza,Cloro,4.13,No,No
+P0606,Suavitel 850ml,Limpieza,Suavitel,8.29,No,No
+P0607,Suavitel 850ml,Limpieza,Suavitel,1.92,No,No
+P0608,Suavitel 850ml,Limpieza,Suavitel,1.33,No,No
+P0609,Suavitel 850ml,Limpieza,Suavitel,5.87,No,No
+P0610,Detergente Ariel 1kg,Limpieza,Detergente,3.77,No,Yes
+P0611,Suavitel 850ml,Limpieza,Suavitel,1.59,No,No
+P0612,Jabón Zote Blanco,Limpieza,Jabón,6.95,No,No
+P0613,Jabón Zote Blanco,Limpieza,Jabón,4.95,No,No
+P0614,Suavitel 850ml,Limpieza,Suavitel,3.49,No,No
+P0615,Suavitel 850ml,Limpieza,Suavitel,1.32,No,No
+P0616,Suavitel 850ml,Limpieza,Suavitel,8.49,No,Yes
+P0617,Cloro Cloralex 1L,Limpieza,Cloro,0.99,No,No
+P0618,Cloro Cloralex 1L,Limpieza,Cloro,6.39,No,Yes
+P0619,Jabón Zote Blanco,Limpieza,Jabón,8.16,No,No
+P0620,Detergente Ariel 1kg,Limpieza,Detergente,2.4,No,No
+P0621,Suavitel 850ml,Limpieza,Suavitel,0.5,No,No
+P0622,Detergente Ariel 1kg,Limpieza,Detergente,8.02,No,No
+P0623,Jabón Zote Blanco,Limpieza,Jabón,6.17,No,No
+P0624,Jabón Zote Blanco,Limpieza,Jabón,1.1,No,No
+P0625,Jabón Zote Blanco,Limpieza,Jabón,4.23,No,No
+P0626,Jabón Zote Blanco,Limpieza,Jabón,3.54,No,No
+P0627,Detergente Ariel 1kg,Limpieza,Detergente,2.79,No,No
+P0628,Jabón Zote Blanco,Limpieza,Jabón,4.5,No,No
+P0629,Suavitel 850ml,Limpieza,Suavitel,9.34,No,Yes
+P0630,Suavitel 850ml,Limpieza,Suavitel,0.74,No,No
+P0631,Suavitel 850ml,Limpieza,Suavitel,0.87,No,No
+P0632,Jabón Zote Blanco,Limpieza,Jabón,8.46,No,No
+P0633,Cloro Cloralex 1L,Limpieza,Cloro,4.45,No,No
+P0634,Cloro Cloralex 1L,Limpieza,Cloro,7.43,No,No
+P0635,Cloro Cloralex 1L,Limpieza,Cloro,3.24,No,No
+P0636,Jabón Zote Blanco,Limpieza,Jabón,3.96,No,No
+P0637,Jabón Zote Blanco,Limpieza,Jabón,5.03,No,No
+P0638,Jabón Zote Blanco,Limpieza,Jabón,8.2,No,No
+P0639,Detergente Ariel 1kg,Limpieza,Detergente,7.78,No,No
+P0640,Cloro Cloralex 1L,Limpieza,Cloro,3.51,No,No
+P0641,Detergente Ariel 1kg,Limpieza,Detergente,7.85,No,No
+P0642,Jabón Zote Blanco,Limpieza,Jabón,7.78,No,No
+P0643,Jabón Zote Blanco,Limpieza,Jabón,6.04,No,No
+P0644,Cloro Cloralex 1L,Limpieza,Cloro,7.55,No,No
+P0645,Detergente Ariel 1kg,Limpieza,Detergente,6.83,No,No
+P0646,Cloro Cloralex 1L,Limpieza,Cloro,3.12,No,No
+P0647,Detergente Ariel 1kg,Limpieza,Detergente,9.3,No,No
+P0648,Suavitel 850ml,Limpieza,Suavitel,2.22,No,No
+P0649,Suavitel 850ml,Limpieza,Suavitel,0.55,No,No
+P0650,Jabón Zote Blanco,Limpieza,Jabón,7.45,No,No
+P0651,Detergente Ariel 1kg,Limpieza,Detergente,3.45,No,No
+P0652,Cloro Cloralex 1L,Limpieza,Cloro,6.37,No,No
+P0653,Jabón Zote Blanco,Limpieza,Jabón,4.32,No,No
+P0654,Cloro Cloralex 1L,Limpieza,Cloro,2.63,No,Yes
+P0655,Jabón Zote Blanco,Limpieza,Jabón,9.15,No,No
+P0656,Suavitel 850ml,Limpieza,Suavitel,5.44,No,No
+P0657,Detergente Ariel 1kg,Limpieza,Detergente,3.09,No,No
+P0658,Suavitel 850ml,Limpieza,Suavitel,3.51,No,No
+P0659,Detergente Ariel 1kg,Limpieza,Detergente,8.41,No,No
+P0660,Detergente Ariel 1kg,Limpieza,Detergente,8.72,No,No
+P0661,Detergente Ariel 1kg,Limpieza,Detergente,9.21,No,Yes
+P0662,Jabón Zote Blanco,Limpieza,Jabón,0.61,No,No
+P0663,Jabón Zote Blanco,Limpieza,Jabón,7.03,No,No
+P0664,Cloro Cloralex 1L,Limpieza,Cloro,7.66,No,No
+P0665,Detergente Ariel 1kg,Limpieza,Detergente,7.69,No,No
+P0666,Suavitel 850ml,Limpieza,Suavitel,9.02,No,No
+P0667,Detergente Ariel 1kg,Limpieza,Detergente,3.15,No,No
+P0668,Detergente Ariel 1kg,Limpieza,Detergente,1.56,No,No
+P0669,Detergente Ariel 1kg,Limpieza,Detergente,7.34,No,No
+P0670,Detergente Ariel 1kg,Limpieza,Detergente,7.83,No,No
+P0671,Jabón Zote Blanco,Limpieza,Jabón,2.94,No,No
+P0672,Detergente Ariel 1kg,Limpieza,Detergente,4.98,No,No
+P0673,Cloro Cloralex 1L,Limpieza,Cloro,8.11,No,No
+P0674,Detergente Ariel 1kg,Limpieza,Detergente,3.82,No,No
+P0675,Jabón Zote Blanco,Limpieza,Jabón,6.43,No,No
+P0676,Jabón Zote Blanco,Limpieza,Jabón,7.01,No,No
+P0677,Cloro Cloralex 1L,Limpieza,Cloro,9.35,No,No
+P0678,Suavitel 850ml,Limpieza,Suavitel,6.15,No,Yes
+P0679,Suavitel 850ml,Limpieza,Suavitel,5.85,No,Yes
+P0680,Detergente Ariel 1kg,Limpieza,Detergente,1.77,No,No
+P0681,Cloro Cloralex 1L,Limpieza,Cloro,3.6,No,No
+P0682,Detergente Ariel 1kg,Limpieza,Detergente,5.4,No,Yes
+P0683,Detergente Ariel 1kg,Limpieza,Detergente,5.96,No,No
+P0684,Jabón Zote Blanco,Limpieza,Jabón,3.7,No,No
+P0685,Cloro Cloralex 1L,Limpieza,Cloro,1.64,No,No
+P0686,Cloro Cloralex 1L,Limpieza,Cloro,8.5,No,No
+P0687,Detergente Ariel 1kg,Limpieza,Detergente,4.51,No,No
+P0688,Cloro Cloralex 1L,Limpieza,Cloro,4.51,No,No
+P0689,Suavitel 850ml,Limpieza,Suavitel,4.43,No,No
+P0690,Suavitel 850ml,Limpieza,Suavitel,3.96,No,No
+P0691,Suavitel 850ml,Limpieza,Suavitel,8.1,No,No
+P0692,Jabón Zote Blanco,Limpieza,Jabón,4.18,No,No
+P0693,Cloro Cloralex 1L,Limpieza,Cloro,3.14,No,No
+P0694,Detergente Ariel 1kg,Limpieza,Detergente,4.3,No,No
+P0695,Suavitel 850ml,Limpieza,Suavitel,7.84,No,No
+P0696,Jabón Zote Blanco,Limpieza,Jabón,7.27,No,No
+P0697,Detergente Ariel 1kg,Limpieza,Detergente,3.39,No,Yes
+P0698,Suavitel 850ml,Limpieza,Suavitel,3.25,No,No
+P0699,Jabón Zote Blanco,Limpieza,Jabón,2.91,No,No
+P0700,Detergente Ariel 1kg,Limpieza,Detergente,2.09,No,No
+P0701,Verduras Mixtas Congeladas,Congelados,Verduras,1.45,Yes,No
+P0702,Pollo Empanizado Congelado,Congelados,Pollo,4.12,Yes,No
+P0703,Pizza Nestlé Pepperoni,Congelados,Pizza,8.88,Yes,Yes
+P0704,Helado Holanda Vainilla,Congelados,Helado,4.31,Yes,No
+P0705,Verduras Mixtas Congeladas,Congelados,Verduras,2.11,Yes,No
+P0706,Pizza Nestlé Pepperoni,Congelados,Pizza,5.45,Yes,No
+P0707,Pollo Empanizado Congelado,Congelados,Pollo,8.47,Yes,No
+P0708,Pizza Nestlé Pepperoni,Congelados,Pizza,9.46,Yes,No
+P0709,Verduras Mixtas Congeladas,Congelados,Verduras,5.06,Yes,No
+P0710,Pollo Empanizado Congelado,Congelados,Pollo,0.56,Yes,No
+P0711,Pollo Empanizado Congelado,Congelados,Pollo,4.14,Yes,No
+P0712,Pollo Empanizado Congelado,Congelados,Pollo,9.41,Yes,No
+P0713,Pollo Empanizado Congelado,Congelados,Pollo,9.72,Yes,No
+P0714,Pollo Empanizado Congelado,Congelados,Pollo,7.7,Yes,No
+P0715,Pollo Empanizado Congelado,Congelados,Pollo,4.05,Yes,No
+P0716,Pollo Empanizado Congelado,Congelados,Pollo,9.78,Yes,No
+P0717,Pollo Empanizado Congelado,Congelados,Pollo,2.65,Yes,No
+P0718,Verduras Mixtas Congeladas,Congelados,Verduras,4.54,Yes,No
+P0719,Verduras Mixtas Congeladas,Congelados,Verduras,4.82,Yes,No
+P0720,Verduras Mixtas Congeladas,Congelados,Verduras,3.35,Yes,No
+P0721,Helado Holanda Vainilla,Congelados,Helado,4.68,Yes,No
+P0722,Verduras Mixtas Congeladas,Congelados,Verduras,3.56,Yes,No
+P0723,Verduras Mixtas Congeladas,Congelados,Verduras,8.78,Yes,No
+P0724,Helado Holanda Vainilla,Congelados,Helado,9.19,Yes,No
+P0725,Helado Holanda Vainilla,Congelados,Helado,9.55,Yes,Yes
+P0726,Pollo Empanizado Congelado,Congelados,Pollo,6.82,Yes,No
+P0727,Pollo Empanizado Congelado,Congelados,Pollo,5.81,Yes,No
+P0728,Pizza Nestlé Pepperoni,Congelados,Pizza,5.57,Yes,No
+P0729,Helado Holanda Vainilla,Congelados,Helado,4.13,Yes,Yes
+P0730,Pizza Nestlé Pepperoni,Congelados,Pizza,3.58,Yes,No
+P0731,Helado Holanda Vainilla,Congelados,Helado,5.35,Yes,No
+P0732,Verduras Mixtas Congeladas,Congelados,Verduras,2.22,Yes,No
+P0733,Pizza Nestlé Pepperoni,Congelados,Pizza,3.07,Yes,No
+P0734,Verduras Mixtas Congeladas,Congelados,Verduras,3.19,Yes,No
+P0735,Pizza Nestlé Pepperoni,Congelados,Pizza,3.42,Yes,No
+P0736,Verduras Mixtas Congeladas,Congelados,Verduras,5.09,Yes,No
+P0737,Pollo Empanizado Congelado,Congelados,Pollo,4.74,Yes,No
+P0738,Verduras Mixtas Congeladas,Congelados,Verduras,3.85,Yes,No
+P0739,Helado Holanda Vainilla,Congelados,Helado,3.16,Yes,No
+P0740,Helado Holanda Vainilla,Congelados,Helado,2.66,Yes,No
+P0741,Pollo Empanizado Congelado,Congelados,Pollo,4.91,Yes,No
+P0742,Pizza Nestlé Pepperoni,Congelados,Pizza,9.38,Yes,No
+P0743,Pizza Nestlé Pepperoni,Congelados,Pizza,9.12,Yes,No
+P0744,Pizza Nestlé Pepperoni,Congelados,Pizza,3.57,Yes,No
+P0745,Verduras Mixtas Congeladas,Congelados,Verduras,4.72,Yes,No
+P0746,Helado Holanda Vainilla,Congelados,Helado,0.94,Yes,No
+P0747,Verduras Mixtas Congeladas,Congelados,Verduras,2.4,Yes,No
+P0748,Pizza Nestlé Pepperoni,Congelados,Pizza,0.97,Yes,No
+P0749,Helado Holanda Vainilla,Congelados,Helado,6.06,Yes,No
+P0750,Verduras Mixtas Congeladas,Congelados,Verduras,3.3,Yes,Yes
+P0751,Pizza Nestlé Pepperoni,Congelados,Pizza,7.77,Yes,No
+P0752,Helado Holanda Vainilla,Congelados,Helado,2.22,Yes,No
+P0753,Helado Holanda Vainilla,Congelados,Helado,6.88,Yes,No
+P0754,Verduras Mixtas Congeladas,Congelados,Verduras,1.68,Yes,No
+P0755,Verduras Mixtas Congeladas,Congelados,Verduras,9.46,Yes,No
+P0756,Verduras Mixtas Congeladas,Congelados,Verduras,2.92,Yes,No
+P0757,Verduras Mixtas Congeladas,Congelados,Verduras,3.96,Yes,No
+P0758,Pizza Nestlé Pepperoni,Congelados,Pizza,9.64,Yes,No
+P0759,Pollo Empanizado Congelado,Congelados,Pollo,4.28,Yes,No
+P0760,Pollo Empanizado Congelado,Congelados,Pollo,2.6,Yes,No
+P0761,Helado Holanda Vainilla,Congelados,Helado,2.51,Yes,No
+P0762,Pollo Empanizado Congelado,Congelados,Pollo,4.6,Yes,No
+P0763,Pizza Nestlé Pepperoni,Congelados,Pizza,4.99,Yes,No
+P0764,Pizza Nestlé Pepperoni,Congelados,Pizza,1.39,Yes,No
+P0765,Helado Holanda Vainilla,Congelados,Helado,8.45,Yes,No
+P0766,Verduras Mixtas Congeladas,Congelados,Verduras,2.29,Yes,No
+P0767,Pizza Nestlé Pepperoni,Congelados,Pizza,3.64,Yes,No
+P0768,Verduras Mixtas Congeladas,Congelados,Verduras,0.67,Yes,No
+P0769,Pizza Nestlé Pepperoni,Congelados,Pizza,6.21,Yes,No
+P0770,Helado Holanda Vainilla,Congelados,Helado,3.35,Yes,No
+P0771,Verduras Mixtas Congeladas,Congelados,Verduras,7.11,Yes,Yes
+P0772,Helado Holanda Vainilla,Congelados,Helado,1.32,Yes,Yes
+P0773,Pollo Empanizado Congelado,Congelados,Pollo,9.21,Yes,No
+P0774,Pollo Empanizado Congelado,Congelados,Pollo,9.34,Yes,No
+P0775,Pizza Nestlé Pepperoni,Congelados,Pizza,0.68,Yes,No
+P0776,Verduras Mixtas Congeladas,Congelados,Verduras,7.24,Yes,No
+P0777,Pizza Nestlé Pepperoni,Congelados,Pizza,1.87,Yes,No
+P0778,Pollo Empanizado Congelado,Congelados,Pollo,9.86,Yes,No
+P0779,Pollo Empanizado Congelado,Congelados,Pollo,6.64,Yes,No
+P0780,Helado Holanda Vainilla,Congelados,Helado,3.74,Yes,No
+P0781,Helado Holanda Vainilla,Congelados,Helado,4.23,Yes,No
+P0782,Pollo Empanizado Congelado,Congelados,Pollo,4.7,Yes,No
+P0783,Verduras Mixtas Congeladas,Congelados,Verduras,1.31,Yes,No
+P0784,Pollo Empanizado Congelado,Congelados,Pollo,4.26,Yes,Yes
+P0785,Helado Holanda Vainilla,Congelados,Helado,9.17,Yes,No
+P0786,Verduras Mixtas Congeladas,Congelados,Verduras,1.31,Yes,No
+P0787,Pollo Empanizado Congelado,Congelados,Pollo,8.45,Yes,No
+P0788,Verduras Mixtas Congeladas,Congelados,Verduras,6.84,Yes,No
+P0789,Helado Holanda Vainilla,Congelados,Helado,3.47,Yes,No
+P0790,Pizza Nestlé Pepperoni,Congelados,Pizza,1.15,Yes,No
+P0791,Pollo Empanizado Congelado,Congelados,Pollo,8.79,Yes,No
+P0792,Pollo Empanizado Congelado,Congelados,Pollo,1.51,Yes,No
+P0793,Pollo Empanizado Congelado,Congelados,Pollo,7.26,Yes,No
+P0794,Pollo Empanizado Congelado,Congelados,Pollo,6.48,Yes,No
+P0795,Verduras Mixtas Congeladas,Congelados,Verduras,5.66,Yes,No
+P0796,Pollo Empanizado Congelado,Congelados,Pollo,4.78,Yes,No
+P0797,Verduras Mixtas Congeladas,Congelados,Verduras,5.14,Yes,No
+P0798,Pollo Empanizado Congelado,Congelados,Pollo,2.87,Yes,No
+P0799,Verduras Mixtas Congeladas,Congelados,Verduras,4.53,Yes,No
+P0800,Pizza Nestlé Pepperoni,Congelados,Pizza,1.81,Yes,No
+P0801,Colgate Triple Acción 100ml,Higiene Personal,Colgate,0.79,No,No
+P0802,Shampoo Head & Shoulders,Higiene Personal,Shampoo,3.71,No,No
+P0803,Desodorante Rexona,Higiene Personal,Desodorante,7.0,No,Yes
+P0804,Desodorante Rexona,Higiene Personal,Desodorante,0.62,No,No
+P0805,Desodorante Rexona,Higiene Personal,Desodorante,1.09,No,No
+P0806,Colgate Triple Acción 100ml,Higiene Personal,Colgate,9.3,No,No
+P0807,Shampoo Head & Shoulders,Higiene Personal,Shampoo,8.16,No,No
+P0808,Colgate Triple Acción 100ml,Higiene Personal,Colgate,6.08,No,No
+P0809,Desodorante Rexona,Higiene Personal,Desodorante,6.08,No,Yes
+P0810,Shampoo Head & Shoulders,Higiene Personal,Shampoo,8.97,No,No
+P0811,Shampoo Head & Shoulders,Higiene Personal,Shampoo,8.81,No,Yes
+P0812,Desodorante Rexona,Higiene Personal,Desodorante,3.08,No,No
+P0813,Shampoo Head & Shoulders,Higiene Personal,Shampoo,6.44,No,No
+P0814,Colgate Triple Acción 100ml,Higiene Personal,Colgate,5.94,No,No
+P0815,Desodorante Rexona,Higiene Personal,Desodorante,6.56,No,No
+P0816,Shampoo Head & Shoulders,Higiene Personal,Shampoo,1.17,No,No
+P0817,Jabón Dove 90g,Higiene Personal,Jabón,5.55,No,No
+P0818,Shampoo Head & Shoulders,Higiene Personal,Shampoo,3.11,No,Yes
+P0819,Desodorante Rexona,Higiene Personal,Desodorante,8.0,No,No
+P0820,Jabón Dove 90g,Higiene Personal,Jabón,5.23,No,No
+P0821,Shampoo Head & Shoulders,Higiene Personal,Shampoo,4.95,No,No
+P0822,Shampoo Head & Shoulders,Higiene Personal,Shampoo,4.5,No,No
+P0823,Shampoo Head & Shoulders,Higiene Personal,Shampoo,9.29,No,No
+P0824,Colgate Triple Acción 100ml,Higiene Personal,Colgate,3.37,No,No
+P0825,Colgate Triple Acción 100ml,Higiene Personal,Colgate,5.37,No,No
+P0826,Colgate Triple Acción 100ml,Higiene Personal,Colgate,8.29,No,No
+P0827,Shampoo Head & Shoulders,Higiene Personal,Shampoo,0.73,No,No
+P0828,Colgate Triple Acción 100ml,Higiene Personal,Colgate,3.27,No,Yes
+P0829,Desodorante Rexona,Higiene Personal,Desodorante,6.31,No,Yes
+P0830,Colgate Triple Acción 100ml,Higiene Personal,Colgate,3.78,No,No
+P0831,Shampoo Head & Shoulders,Higiene Personal,Shampoo,6.2,No,No
+P0832,Jabón Dove 90g,Higiene Personal,Jabón,2.63,No,No
+P0833,Shampoo Head & Shoulders,Higiene Personal,Shampoo,3.38,No,No
+P0834,Colgate Triple Acción 100ml,Higiene Personal,Colgate,2.41,No,No
+P0835,Shampoo Head & Shoulders,Higiene Personal,Shampoo,8.89,No,No
+P0836,Jabón Dove 90g,Higiene Personal,Jabón,1.04,No,No
+P0837,Jabón Dove 90g,Higiene Personal,Jabón,2.62,No,No
+P0838,Desodorante Rexona,Higiene Personal,Desodorante,8.25,No,No
+P0839,Shampoo Head & Shoulders,Higiene Personal,Shampoo,5.94,No,No
+P0840,Shampoo Head & Shoulders,Higiene Personal,Shampoo,3.45,No,No
+P0841,Shampoo Head & Shoulders,Higiene Personal,Shampoo,2.52,No,No
+P0842,Desodorante Rexona,Higiene Personal,Desodorante,3.82,No,No
+P0843,Desodorante Rexona,Higiene Personal,Desodorante,2.46,No,No
+P0844,Desodorante Rexona,Higiene Personal,Desodorante,3.11,No,No
+P0845,Jabón Dove 90g,Higiene Personal,Jabón,2.85,No,No
+P0846,Colgate Triple Acción 100ml,Higiene Personal,Colgate,7.14,No,No
+P0847,Desodorante Rexona,Higiene Personal,Desodorante,7.36,No,No
+P0848,Desodorante Rexona,Higiene Personal,Desodorante,6.69,No,No
+P0849,Shampoo Head & Shoulders,Higiene Personal,Shampoo,6.6,No,No
+P0850,Desodorante Rexona,Higiene Personal,Desodorante,4.38,No,No
+P0851,Colgate Triple Acción 100ml,Higiene Personal,Colgate,8.59,No,No
+P0852,Jabón Dove 90g,Higiene Personal,Jabón,3.75,No,No
+P0853,Jabón Dove 90g,Higiene Personal,Jabón,1.07,No,No
+P0854,Desodorante Rexona,Higiene Personal,Desodorante,9.8,No,No
+P0855,Desodorante Rexona,Higiene Personal,Desodorante,0.74,No,No
+P0856,Jabón Dove 90g,Higiene Personal,Jabón,1.01,No,No
+P0857,Desodorante Rexona,Higiene Personal,Desodorante,3.6,No,No
+P0858,Shampoo Head & Shoulders,Higiene Personal,Shampoo,8.27,No,No
+P0859,Shampoo Head & Shoulders,Higiene Personal,Shampoo,2.98,No,No
+P0860,Colgate Triple Acción 100ml,Higiene Personal,Colgate,3.59,No,Yes
+P0861,Shampoo Head & Shoulders,Higiene Personal,Shampoo,6.87,No,Yes
+P0862,Jabón Dove 90g,Higiene Personal,Jabón,9.92,No,No
+P0863,Shampoo Head & Shoulders,Higiene Personal,Shampoo,6.54,No,No
+P0864,Desodorante Rexona,Higiene Personal,Desodorante,7.15,No,No
+P0865,Desodorante Rexona,Higiene Personal,Desodorante,6.4,No,No
+P0866,Shampoo Head & Shoulders,Higiene Personal,Shampoo,4.49,No,No
+P0867,Desodorante Rexona,Higiene Personal,Desodorante,6.48,No,No
+P0868,Shampoo Head & Shoulders,Higiene Personal,Shampoo,9.62,No,Yes
+P0869,Desodorante Rexona,Higiene Personal,Desodorante,7.94,No,No
+P0870,Jabón Dove 90g,Higiene Personal,Jabón,8.33,No,Yes
+P0871,Shampoo Head & Shoulders,Higiene Personal,Shampoo,6.45,No,No
+P0872,Desodorante Rexona,Higiene Personal,Desodorante,3.68,No,No
+P0873,Shampoo Head & Shoulders,Higiene Personal,Shampoo,8.33,No,No
+P0874,Jabón Dove 90g,Higiene Personal,Jabón,0.95,No,Yes
+P0875,Colgate Triple Acción 100ml,Higiene Personal,Colgate,4.19,No,No
+P0876,Colgate Triple Acción 100ml,Higiene Personal,Colgate,8.12,No,No
+P0877,Desodorante Rexona,Higiene Personal,Desodorante,3.67,No,No
+P0878,Shampoo Head & Shoulders,Higiene Personal,Shampoo,1.83,No,No
+P0879,Shampoo Head & Shoulders,Higiene Personal,Shampoo,4.23,No,No
+P0880,Colgate Triple Acción 100ml,Higiene Personal,Colgate,9.57,No,No
+P0881,Shampoo Head & Shoulders,Higiene Personal,Shampoo,0.66,No,No
+P0882,Shampoo Head & Shoulders,Higiene Personal,Shampoo,9.48,No,No
+P0883,Shampoo Head & Shoulders,Higiene Personal,Shampoo,3.29,No,No
+P0884,Jabón Dove 90g,Higiene Personal,Jabón,7.79,No,No
+P0885,Desodorante Rexona,Higiene Personal,Desodorante,0.62,No,No
+P0886,Desodorante Rexona,Higiene Personal,Desodorante,6.52,No,No
+P0887,Desodorante Rexona,Higiene Personal,Desodorante,8.93,No,No
+P0888,Jabón Dove 90g,Higiene Personal,Jabón,7.82,No,No
+P0889,Desodorante Rexona,Higiene Personal,Desodorante,5.87,No,No
+P0890,Colgate Triple Acción 100ml,Higiene Personal,Colgate,3.84,No,No
+P0891,Jabón Dove 90g,Higiene Personal,Jabón,6.46,No,Yes
+P0892,Desodorante Rexona,Higiene Personal,Desodorante,0.95,No,No
+P0893,Colgate Triple Acción 100ml,Higiene Personal,Colgate,0.78,No,No
+P0894,Desodorante Rexona,Higiene Personal,Desodorante,2.03,No,No
+P0895,Shampoo Head & Shoulders,Higiene Personal,Shampoo,3.95,No,No
+P0896,Shampoo Head & Shoulders,Higiene Personal,Shampoo,4.97,No,No
+P0897,Jabón Dove 90g,Higiene Personal,Jabón,4.31,No,No
+P0898,Colgate Triple Acción 100ml,Higiene Personal,Colgate,6.58,No,No
+P0899,Jabón Dove 90g,Higiene Personal,Jabón,3.85,No,No
+P0900,Desodorante Rexona,Higiene Personal,Desodorante,1.11,No,No
+P0901,Alimento Peces Tetra,Mascotas,Alimento,3.36,No,No
+P0902,Snacks Pedigree,Mascotas,Snacks,5.73,No,No
+P0903,Whiskas Gato Adulto,Mascotas,Whiskas,2.11,No,No
+P0904,Whiskas Gato Adulto,Mascotas,Whiskas,5.87,No,Yes
+P0905,Arena para Gato 5kg,Mascotas,Arena,0.56,No,No
+P0906,Snacks Pedigree,Mascotas,Snacks,4.94,No,No
+P0907,Snacks Pedigree,Mascotas,Snacks,9.66,No,Yes
+P0908,Alimento Peces Tetra,Mascotas,Alimento,0.73,No,No
+P0909,Snacks Pedigree,Mascotas,Snacks,0.67,No,No
+P0910,Dog Chow Adulto 2kg,Mascotas,Dog,5.81,No,No
+P0911,Alimento Peces Tetra,Mascotas,Alimento,9.27,No,No
+P0912,Arena para Gato 5kg,Mascotas,Arena,7.27,No,No
+P0913,Alimento Peces Tetra,Mascotas,Alimento,5.23,No,No
+P0914,Whiskas Gato Adulto,Mascotas,Whiskas,9.07,No,No
+P0915,Whiskas Gato Adulto,Mascotas,Whiskas,5.97,No,No
+P0916,Alimento Peces Tetra,Mascotas,Alimento,4.58,No,No
+P0917,Arena para Gato 5kg,Mascotas,Arena,9.41,No,No
+P0918,Whiskas Gato Adulto,Mascotas,Whiskas,6.83,No,Yes
+P0919,Arena para Gato 5kg,Mascotas,Arena,5.62,No,No
+P0920,Dog Chow Adulto 2kg,Mascotas,Dog,3.49,No,No
+P0921,Snacks Pedigree,Mascotas,Snacks,3.47,No,No
+P0922,Snacks Pedigree,Mascotas,Snacks,2.03,No,No
+P0923,Whiskas Gato Adulto,Mascotas,Whiskas,3.81,No,No
+P0924,Arena para Gato 5kg,Mascotas,Arena,2.28,No,No
+P0925,Whiskas Gato Adulto,Mascotas,Whiskas,4.21,No,No
+P0926,Whiskas Gato Adulto,Mascotas,Whiskas,6.45,No,No
+P0927,Alimento Peces Tetra,Mascotas,Alimento,5.68,No,No
+P0928,Snacks Pedigree,Mascotas,Snacks,2.82,No,No
+P0929,Dog Chow Adulto 2kg,Mascotas,Dog,5.54,No,No
+P0930,Snacks Pedigree,Mascotas,Snacks,5.24,No,No
+P0931,Snacks Pedigree,Mascotas,Snacks,9.61,No,No
+P0932,Arena para Gato 5kg,Mascotas,Arena,8.09,No,No
+P0933,Arena para Gato 5kg,Mascotas,Arena,4.01,No,No
+P0934,Dog Chow Adulto 2kg,Mascotas,Dog,2.04,No,No
+P0935,Whiskas Gato Adulto,Mascotas,Whiskas,1.03,No,No
+P0936,Dog Chow Adulto 2kg,Mascotas,Dog,8.49,No,No
+P0937,Whiskas Gato Adulto,Mascotas,Whiskas,0.62,No,No
+P0938,Alimento Peces Tetra,Mascotas,Alimento,0.94,No,No
+P0939,Arena para Gato 5kg,Mascotas,Arena,1.0,No,No
+P0940,Arena para Gato 5kg,Mascotas,Arena,3.91,No,No
+P0941,Dog Chow Adulto 2kg,Mascotas,Dog,9.77,No,No
+P0942,Alimento Peces Tetra,Mascotas,Alimento,9.51,No,No
+P0943,Dog Chow Adulto 2kg,Mascotas,Dog,3.22,No,No
+P0944,Alimento Peces Tetra,Mascotas,Alimento,7.12,No,No
+P0945,Arena para Gato 5kg,Mascotas,Arena,8.33,No,No
+P0946,Arena para Gato 5kg,Mascotas,Arena,4.21,No,No
+P0947,Whiskas Gato Adulto,Mascotas,Whiskas,5.37,No,No
+P0948,Whiskas Gato Adulto,Mascotas,Whiskas,3.82,No,No
+P0949,Snacks Pedigree,Mascotas,Snacks,2.49,No,No
+P0950,Arena para Gato 5kg,Mascotas,Arena,5.75,No,No
+P0951,Dog Chow Adulto 2kg,Mascotas,Dog,2.0,No,Yes
+P0952,Arena para Gato 5kg,Mascotas,Arena,1.78,No,Yes
+P0953,Arena para Gato 5kg,Mascotas,Arena,4.99,No,No
+P0954,Whiskas Gato Adulto,Mascotas,Whiskas,2.32,No,No
+P0955,Dog Chow Adulto 2kg,Mascotas,Dog,2.62,No,No
+P0956,Whiskas Gato Adulto,Mascotas,Whiskas,6.21,No,No
+P0957,Dog Chow Adulto 2kg,Mascotas,Dog,6.18,No,No
+P0958,Arena para Gato 5kg,Mascotas,Arena,2.21,No,No
+P0959,Dog Chow Adulto 2kg,Mascotas,Dog,1.66,No,No
+P0960,Snacks Pedigree,Mascotas,Snacks,6.27,No,No
+P0961,Alimento Peces Tetra,Mascotas,Alimento,2.24,No,Yes
+P0962,Alimento Peces Tetra,Mascotas,Alimento,6.14,No,No
+P0963,Arena para Gato 5kg,Mascotas,Arena,6.45,No,No
+P0964,Alimento Peces Tetra,Mascotas,Alimento,6.27,No,No
+P0965,Whiskas Gato Adulto,Mascotas,Whiskas,3.81,No,No
+P0966,Whiskas Gato Adulto,Mascotas,Whiskas,7.19,No,No
+P0967,Whiskas Gato Adulto,Mascotas,Whiskas,7.8,No,No
+P0968,Arena para Gato 5kg,Mascotas,Arena,7.49,No,No
+P0969,Dog Chow Adulto 2kg,Mascotas,Dog,9.07,No,No
+P0970,Dog Chow Adulto 2kg,Mascotas,Dog,1.32,No,No
+P0971,Alimento Peces Tetra,Mascotas,Alimento,3.76,No,No
+P0972,Dog Chow Adulto 2kg,Mascotas,Dog,1.93,No,No
+P0973,Arena para Gato 5kg,Mascotas,Arena,2.7,No,No
+P0974,Dog Chow Adulto 2kg,Mascotas,Dog,4.53,No,No
+P0975,Dog Chow Adulto 2kg,Mascotas,Dog,5.88,No,No
+P0976,Dog Chow Adulto 2kg,Mascotas,Dog,9.92,No,No
+P0977,Alimento Peces Tetra,Mascotas,Alimento,8.93,No,No
+P0978,Alimento Peces Tetra,Mascotas,Alimento,6.42,No,No
+P0979,Whiskas Gato Adulto,Mascotas,Whiskas,1.3,No,No
+P0980,Whiskas Gato Adulto,Mascotas,Whiskas,6.99,No,No
+P0981,Whiskas Gato Adulto,Mascotas,Whiskas,1.1,No,No
+P0982,Whiskas Gato Adulto,Mascotas,Whiskas,3.78,No,No
+P0983,Arena para Gato 5kg,Mascotas,Arena,2.9,No,No
+P0984,Snacks Pedigree,Mascotas,Snacks,8.19,No,No
+P0985,Snacks Pedigree,Mascotas,Snacks,7.25,No,No
+P0986,Alimento Peces Tetra,Mascotas,Alimento,8.21,No,No
+P0987,Dog Chow Adulto 2kg,Mascotas,Dog,4.61,No,No
+P0988,Alimento Peces Tetra,Mascotas,Alimento,2.32,No,No
+P0989,Alimento Peces Tetra,Mascotas,Alimento,8.42,No,No
+P0990,Arena para Gato 5kg,Mascotas,Arena,4.81,No,No
+P0991,Dog Chow Adulto 2kg,Mascotas,Dog,8.88,No,No
+P0992,Arena para Gato 5kg,Mascotas,Arena,6.99,No,Yes
+P0993,Whiskas Gato Adulto,Mascotas,Whiskas,4.19,No,No
+P0994,Snacks Pedigree,Mascotas,Snacks,1.65,No,No
+P0995,Arena para Gato 5kg,Mascotas,Arena,8.58,No,No
+P0996,Dog Chow Adulto 2kg,Mascotas,Dog,5.56,No,No
+P0997,Alimento Peces Tetra,Mascotas,Alimento,4.99,No,No
+P0998,Snacks Pedigree,Mascotas,Snacks,2.17,No,No
+P0999,Snacks Pedigree,Mascotas,Snacks,3.39,No,No
+P1000,Alimento Peces Tetra,Mascotas,Alimento,7.81,No,No
