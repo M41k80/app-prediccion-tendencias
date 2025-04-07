@@ -10,7 +10,9 @@
 ## cd backend 
 ## cd Django
 ## source venv/bin/activate
+
 ## cd django_backend
+$ pip install -r requirements.txt
 ## python3 manage.py runserver o python manage.py runserver
 ## http://localhost:8000/swagger/ para ver los endpoints
 
@@ -19,5 +21,6 @@
 ## cd backend
 ## cd FastApi
 ## source venv/bin/activate
+$ pip install -r requirements.txt
 ## uvicorn app.main:app --host 0.0.0.0 --port 8001
 ## http://127.0.0.1:8001/docs para ver los enpoints
