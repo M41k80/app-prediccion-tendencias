@@ -5,12 +5,14 @@
   --foreground: #171717;
 }
 
-/* @theme inline {
-  --color-background: var(--background);
+@theme {
+  --color-background: var(--background);  
   --color-foreground: var(--foreground);
+  --color-gris: #F3F3F3;
+  --color-gris2: #E8E8E8;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-} */
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
