@@ -6,10 +6,11 @@
 }
 
 @theme {
-  --color-background: var(--background);  
+  --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-gris: #F3F3F3;
-  --color-gris2: #E8E8E8;
+  --color-gris: #f3f3f3;
+  --color-gris2: #e8e8e8;
+  --color-gris3: #d7d7d7;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
