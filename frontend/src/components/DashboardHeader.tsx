@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 export default function DashboardHeader() {
   return (
@@ -15,5 +15,5 @@ export default function DashboardHeader() {
         className="rounded-full"
       />
     </div>
-  );
+  )
 }
