@@ -3,11 +3,8 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div>Prueba</div>
-  )
-}
-
-      <main className="flex-1">
+    <div>
+    <main className="flex-1">
         <div className="container mx-auto px-4 py-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -82,5 +79,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    
   )
 }
