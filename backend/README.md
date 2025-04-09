@@ -42,8 +42,9 @@
 - **Respuesta**:
     ```json
     {
+        "refres_token" : "your_refresh_token", 
       "access_token": "your_access_token_here",
-      "token_type": "bearer"
+      
     }
     ```
 
