@@ -1,7 +1,7 @@
 from tracemalloc import start
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from app.services.product_lookup import get_product_id_from_name
+from app.services.product_lookup import get_product_id_from_name, get_all_products
 from app.services.prediction import predict_sales  
 from datetime import datetime, timedelta
 import pandas as pd
