@@ -1,7 +1,7 @@
 # **Documentación de la API**
 
 ## **1. Enlaces de las API**
-- **Django (Usuarios)**: [Swagger UI](https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/swagger)
+- **Django (Usuarios)**: [Swagger UI](https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/swagger)
 - **FastAPI**: [Docs](https://extension-rental-freeze-blow.trycloudflare.com/docs)
 
 ---
