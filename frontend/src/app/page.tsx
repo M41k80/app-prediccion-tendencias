@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import { format } from 'date-fns'
 
 export default function Home() {
   return (
@@ -72,11 +71,7 @@ export default function Home() {
               Contacto
             </Link>
           </div>
-          <div className="text-gray-600">
 
-            {format(new Date(), "dd 'de' MMMM 'de' yyyy")}
-
-          </div>
           <div className="flex gap-6">
             <Link href="/privacy" className="text-gray-600 hover:text-gray-900">
               Política de privacidad
