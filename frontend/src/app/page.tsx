@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { format } from 'date-fns'
 
 export default function Home() {
   return (
@@ -77,9 +78,17 @@ export default function Home() {
 
       <footer className="border-t border-gray-200 mt-16">
         <div className="container mx-auto px-4 py-6 flex flex-wrap justify-between items-center">
-          <Link href="/contacto" className="text-gray-600 hover:text-gray-900">
-            Contacto
-          </Link>
+
+          <div className="flex gap-6">
+            <Link href="/contacto" className="text-gray-600 hover:text-gray-900">
+              Contacto
+            </Link>
+          </div>
+          <div className="text-gray-600">
+
+            {format(new Date(), "dd 'de' MMMM 'de' yyyy")}
+
+          </div>
           <div className="flex gap-6">
             <Link href="/privacy" className="text-gray-600 hover:text-gray-900">
               Política de privacidad
@@ -93,3 +102,4 @@ export default function Home() {
     </div>
   )
 }
+
