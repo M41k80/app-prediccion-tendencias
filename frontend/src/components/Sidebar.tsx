@@ -4,14 +4,14 @@ import {
   FilePlus,
   History,
   CircleUserRound,
-} from "lucide-react";
+} from "lucide-react"
 
 const sidebarItems = [
 {icon: Home, label: "Inicio"},
 {icon: FilePlus, label: "Nueva Predicción"},
 {icon: History, label: "Historial"},
 {icon: CircleUserRound, label: "Perfil"},
-{icon: HelpCircle, label: "Ayuda"}];
+{icon: HelpCircle, label: "Ayuda"}]
 
 
 export default function Sidebar() {
@@ -32,5 +32,5 @@ export default function Sidebar() {
         </div>
       ))}
     </aside>
-  );
+  )
 }

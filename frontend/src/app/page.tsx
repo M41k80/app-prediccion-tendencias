@@ -90,7 +90,7 @@ export default function Home() {
 
           </div>
           <div className="flex gap-6">
-            <Link href="/privacy" className="text-gray-600 hover:text-gray-900">
+            <Link href="/politicas" className="text-gray-600 hover:text-gray-900">
               Política de privacidad
             </Link>
             <Link href="/terms" className="text-gray-600 hover:text-gray-900">

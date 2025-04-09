@@ -1,6 +1,6 @@
-import Sidebar from "@/components/Sidebar";
-import DashboardHeader from "@/components/DashboardHeader";
-import InfoCard from "@/components/InfoCard";
+import Sidebar from "@/components/Sidebar"
+import DashboardHeader from "@/components/DashboardHeader"
+import InfoCard from "@/components/InfoCard"
 
 const Dashboard = () => {
   return (
