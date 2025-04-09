@@ -42,7 +42,7 @@ export default function Sidebar() {
             <span className="text-base font-semibold text-black">{label}</span>
           </div>
         ))}
-        <h2 className="mt-32 text-black font-semibold cursor-pointer">Cerrar Sesión</h2>
+        <h2 className="mt-36 text-black font-semibold cursor-pointer">Cerrar Sesión</h2>
       </aside>
 
       {/* Sidebar móvil que se desplega*/}
@@ -72,7 +72,7 @@ export default function Sidebar() {
               </span>
             </div>
           ))}
-                  <h2 className="mt-32 text-black font-semibold text-center cursor-pointer">Cerrar Sesión</h2>
+                  <h2 className="mt-36 text-black font-semibold text-center cursor-pointer">Cerrar Sesión</h2>
         </motion.aside>
         
       )}
