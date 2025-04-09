@@ -1,4 +1,4 @@
-# [# http://localhost:8000/swagger/](https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/swagger)  DJANGO USERS
+# https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/swagger DJANGO USERS
 
 # https://extension-rental-freeze-blow.trycloudflare.com/docs FASTAPI
 
