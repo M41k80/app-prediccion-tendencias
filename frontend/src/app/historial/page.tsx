@@ -3,7 +3,7 @@
 import Sidebar from "@/components/Sidebar"
 import Image from "next/image"
 
-export default function PerfilPage() {
+export default function HistorialPage() {
 
 
   return (
@@ -13,7 +13,7 @@ export default function PerfilPage() {
       <main className="flex-1 px-4 sm:px-6 lg:px-8 py-8 w-full">
         {/* Encabezado */}
         <header className="flex justify-between items-center mb-10 max-w-5xl mx-auto">
-          <h1 className="text-2xl font-semibold text-black">Perfil</h1>
+          <h1 className="text-2xl font-semibold text-black">Historial de Predicciones</h1>
           <Image
             src="/perfil.png"
             alt="Avatar del usuario"
