@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import { useEffect, useState } from "react";
 import {
   LineChart,
@@ -10,17 +9,28 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import axios from "axios";
 import { toast } from "sonner";
 
 interface PredictionPoint {
   date: string;
-  prediction: number;
+  sales_prediction: number;
 }
 
 interface RawPrediction {
   date: string;
-  prediction: string;
+  sales_prediction: string;
+}
+
+interface Prediction {
+  id: number;
+  store_id: number;
+  product_name: string;
+  start_date: string;
+  n_days: number;
+  result: {
+    predictions: RawPrediction[];
+  };
+  date_requested: string;
 }
 
 interface Props {
@@ -35,34 +45,43 @@ export default function LineChartCard({ className = "" }: Props) {
     const fetchPrediction = async () => {
       try {
         const token = localStorage.getItem("access_token");
-        const res = await axios.post(
-          "https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/predict/",
+        if (!token) {
+          throw new Error("No token found in localStorage.");
+        }
+
+        const historialRes = await fetch(
+          "http://127.0.0.1:8000/api/historial/",
           {
-            store_id: 1,
-            product_name: "Coca-Cola 600ml",
-            n_days: 7,
-            start_date: "2025-04-06",
-            store_type: "a",
-            assortment: "b",
-            state_holiday: "0",
-            school_holiday: 0,
-            promo: 1,
-            weather: 3,
-            sentiment_score: 0.8,
-          },
-          {
+            method: "GET",
             headers: {
               Authorization: `Bearer ${token}`,
             },
           }
         );
 
-        const responseData: RawPrediction[] = res.data.prediction;
+        if (!historialRes.ok) {
+          throw new Error("Error al obtener el historial de predicciones.");
+        }
 
-        const formatted: PredictionPoint[] = responseData.map((item) => ({
-          date: item.date,
-          prediction: parseFloat(item.prediction),
-        }));
+        const historialData: Prediction[] = await historialRes.json();
+        console.log(historialData);  // Verifica la estructura de los datos
+
+        // Ordenar las predicciones por la fecha más reciente
+        const latestPrediction = historialData.sort(
+          (a, b) => new Date(b.date_requested).getTime() - new Date(a.date_requested).getTime()
+        )[0];
+
+        if (!latestPrediction || !latestPrediction.result.predictions.length) {
+          throw new Error("No se encontraron predicciones en el historial.");
+        }
+
+        // Obtener las predicciones más recientes
+        const formatted: PredictionPoint[] = latestPrediction.result.predictions.map(
+          (item: RawPrediction) => ({
+            date: item.date,
+            sales_prediction: parseFloat(item.sales_prediction), // Asegúrate de convertir a número
+          })
+        );
 
         setData(formatted);
       } catch (error) {
@@ -92,12 +111,7 @@ export default function LineChartCard({ className = "" }: Props) {
             <XAxis dataKey="date" tick={{ fontSize: 12 }} />
             <YAxis tick={{ fontSize: 12 }} />
             <Tooltip />
-            <Line
-              type="monotone"
-              dataKey="prediction"
-              stroke="#3B82F6"
-              strokeWidth={2}
-            />
+            <Line type="monotone" dataKey="sales_prediction" stroke="#3B82F6" strokeWidth={2} />
           </LineChart>
         </ResponsiveContainer>
       )}

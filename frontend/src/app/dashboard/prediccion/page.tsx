@@ -29,6 +29,7 @@ export default function NuevaPrediccionPage() {
   const [productos, setProductos] = useState<Producto[]>([]);
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   const [totalDays, setTotalDays] = useState<number>(7);
+  
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -70,11 +71,15 @@ export default function NuevaPrediccionPage() {
     };
 
     try {
+      const token = localStorage.getItem("access_token");
+        if (!token) {
+          throw new Error("No token found in localStorage.");
+        }
       const response = await fetch('https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/predict/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0Mjk1NDY5LCJpYXQiOjE3NDQyOTE4NjksImp0aSI6IjliNzI1NjUxZGZhYTRiNTg5MTkxNGZmNjNiMDIyZjQ2IiwidXNlcl9pZCI6MX0.BtSfBdslArpTH_lqep-j_h2elMyYyXhX1YVG2Q0SJfQ`, // Cambia tu token aquí
+          'Authorization': `Bearer ${token}`, // Cambia tu token aquí
         },
         body: JSON.stringify(requestData),
       });
@@ -143,7 +148,7 @@ export default function NuevaPrediccionPage() {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const response = await fetch("https://profits-beginner-warcraft-marking.trycloudflare.com/products");
+        const response = await fetch("https://leisure-camcorder-acts-run.trycloudflare.com/products");
         const data = await response.json()
         setProductos(data.products)
       } catch (error) {

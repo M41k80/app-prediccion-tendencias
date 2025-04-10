@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation"; 
+import { toast } from "sonner"; 
 
 const RegisterModal = ({
   handleShowModalRegister,
@@ -8,6 +10,13 @@ const RegisterModal = ({
   handleShowModalRegister: () => void;
 }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -19,10 +28,79 @@ const RegisterModal = ({
   const handleClose = () => {
     setIsVisible(false);
     setTimeout(() => {
-      handleShowModalRegister(); // Se desmonta desde el padre
-    }, 300); // Duración igual a la animación
+      handleShowModalRegister();
+    }, 300);
   };
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+  
+    try {
+      // primero registramos al usuario
+      const registerResponse = await fetch(
+        "https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/users/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username: formData.username,
+            email: formData.email,
+            password: formData.password,
+          }),
+        }
+      );
+  
+      if (registerResponse.status === 201) {
+        // si el registro es exitoso, hacemos el login automáticamente
+        const loginResponse = await fetch(
+          "https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/token/",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              username: formData.username,
+              password: formData.password,
+            }),
+          }
+        );
+  
+        if (loginResponse.status === 200) {
+          const data = await loginResponse.json();
+          console.log("Login response data:", data); // Verificamos la respuesta
+  
+          if (data && data.access) { // checamos que 'access' exista
+            // guardamos el access_token en localStorage
+            localStorage.setItem("access_token", data.access);
+            toast.success("¡Registro y login exitosos!");
+            handleClose(); // cerramos el modal
+            router.push("/dashboard"); // vamos al dashboard
+          } else {
+            toast.error("No se recibió el token.");
+          }
+        } else {
+          toast.error("Error al obtener el token.");
+        }
+      } else {
+        toast.error("Error al registrar el usuario.");
+      }
+    } catch (error) {
+      toast.error("Hubo un error durante el registro o login.");
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  console.log(localStorage.getItem("access_token"));
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm px-4"
@@ -83,7 +161,7 @@ const RegisterModal = ({
           </p>
 
           {/* Formulario */}
-          <form className="w-full">
+          <form className="w-full" onSubmit={handleSubmit}>
             {/* Nombre */}
             <div className="relative mb-4">
               <Image
@@ -94,8 +172,10 @@ const RegisterModal = ({
                 className="absolute left-3 top-2.5"
               />
               <input
-                name="fullname"
+                name="username"
                 type="text"
+                value={formData.username}
+                onChange={handleChange}
                 autoComplete="fullname"
                 required
                 placeholder="Nombre de Usuario"
@@ -115,6 +195,8 @@ const RegisterModal = ({
               <input
                 name="email"
                 type="email"
+                value={formData.email}
+                onChange={handleChange}
                 autoComplete="email"
                 required
                 placeholder="Correo electrónico"
@@ -134,6 +216,8 @@ const RegisterModal = ({
               <input
                 name="password"
                 type="password"
+                value={formData.password}
+                onChange={handleChange}
                 autoComplete="current-password"
                 required
                 placeholder="Contraseña"
@@ -148,9 +232,10 @@ const RegisterModal = ({
             {/* Botón */}
             <button
               type="submit"
-              className="w-full rounded-lg bg-[#426CE5] hover:bg-[#375CC7] py-2.5 text-sm font-medium text-white transition-colors cursor-pointer"
+              className="w-full rounded-lg bg-[#426CE5] hover:bg-[#375CC7] py-2.5 text-sm font-medium text-white transition-colores cursor-pointer"
+              disabled={loading}
             >
-              Registrarse
+              {loading ? "Registrando..." : "Registrarse"}
             </button>
           </form>
         </div>

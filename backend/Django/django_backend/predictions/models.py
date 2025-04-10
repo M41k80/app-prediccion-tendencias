@@ -9,3 +9,4 @@ class Prediction(models.Model):
     start_date = models.DateField()
     n_days = models.IntegerField()
     result = models.JSONField()  # almacena el resultado de la predicción
+    prediction_date = models.DateTimeField(auto_now_add=True)

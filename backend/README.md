@@ -9,7 +9,7 @@
 ## **2. Endpoints de la API**
 
 ### **2.1. Listar Todos los Productos**
-- **URL**: `https://[sharing-sections-mil-adverse.trycloudflare.com](https://profits-beginner-warcraft-marking.trycloudflare.com)/products`
+- **URL**: `https://[sharing-sections-mil-adverse.trycloudflare.com](https://profits-beginner-warcraft-marking.trycloudflare.com/products`
 - **Método**: `GET`
 - **Descripción**: Obtiene una lista de todos los productos.
 

@@ -1,12 +1,39 @@
-// ✅ Dashboard Page (page.tsx)
+'use client'
 import Sidebar from "@/components/Sidebar";
 import DashboardHeader from "@/components/DashboardHeader";
 import InfoCard from "@/components/InfoCard";
 import PredictionCard from "@/components/PredictionCard";
 import LineChartCard from "@/components/LineChartCard";
 import PieChartSelect from "@/components/PieChartSelect";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const Dashboard = () => {
+
+  const router = useRouter();
+
+  useEffect(() => {
+    // Comprobamos el token inmediatamente y luego cada 5 minutos
+    const intervalId = setInterval(async () => {
+      const isValid = await checkTokenValidity();
+      if (!isValid) {
+        router.push("/"); // Redirige al home para que inicie sesión
+      }
+    }, 5 * 60 * 1000); // 5 minutos en milisegundos
+
+    return () => clearInterval(intervalId); // Limpiamos el intervalo cuando el componente se desmonte
+  }, [router]);
+
+  const checkTokenValidity = async () => {
+    const response = await fetch("/api/check-token", {
+      method: "GET",
+      headers: {
+        "Authorization": `Bearer ${localStorage.getItem("token")}`,
+      },
+    });
+    const data = await response.json();
+    return data.isValid; // Asumimos que la API responde con un campo 'isValid'
+  };
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
       <Sidebar />

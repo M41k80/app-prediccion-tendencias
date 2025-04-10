@@ -58,6 +58,21 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'authorization',
+    'accept',
+    'x-csrftoken',  # Si usas tokens CSRF
+    'access-control-allow-origin',  # Para asegurar que todas las cabeceras sean aceptadas
+]
+
+
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_METHODS = [
+    'GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS',  # Asegúrate de que OPTIONS esté permitido
+]
+
 ROOT_URLCONF = 'django_backend.urls'
 
 TEMPLATES = [
