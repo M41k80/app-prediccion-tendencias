@@ -14,10 +14,14 @@ import Image from "next/image";
 
 const sidebarItems = [
   { icon: Home, label: "Inicio", path: "/dashboard" },
-  { icon: FilePlus, label: "Nueva Predicción", path: "dashboard/prediccion" },
-  { icon: History, label: "Historial de Predicciones", path: "dashboard/historial" },
-  { icon: CircleUserRound, label: "Perfil", path: "dashboard/perfil" },
-  { icon: HelpCircle, label: "Ayuda", path: "dashboard/ayuda" },
+  { icon: FilePlus, label: "Nueva Predicción", path: "/dashboard/prediccion" },
+  {
+    icon: History,
+    label: "Historial de Predicciones",
+    path: "/dashboard/historial",
+  },
+  { icon: CircleUserRound, label: "Perfil", path: "/dashboard/perfil" },
+  { icon: HelpCircle, label: "Ayuda", path: "/dashboard/ayuda" },
 ];
 
 export default function Sidebar() {

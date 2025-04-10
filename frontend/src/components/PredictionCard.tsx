@@ -137,7 +137,7 @@ export default function PredictionCard({ className = "" }: PredictionCardProps) 
       <button
         onClick={handleSubmit}
         disabled={loading}
-        className="mx-auto block bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-16 py-2.5 rounded-md transition disabled:opacity-60 disabled:cursor-not-allowed"
+        className="mx-auto block bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-16 py-2.5 rounded-md transition disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
       >
         {loading ? "Generando..." : "Generar"}
       </button>
