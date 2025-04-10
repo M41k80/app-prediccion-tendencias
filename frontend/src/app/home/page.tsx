@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import FooterHome from "@/components/FooterHome";
 import LoginModal from "@/components/LoginModal";
 import RegisterModal from "@/components/RegisterModal";
+import Image from "next/image";
 
 const Home = () => {
   const [showModalLogin, setShowModalLogin] = useState(false);
@@ -48,8 +49,14 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div>
-          <img src="https://s3-alpha-sig.figma.com/img/8593/6df1/ecb6f53f485edc6892b4d3baafba41e3?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=uKp~GMhuFvyEF8QwZVzJGhJyMBw0F0F1IDGxY7i3K-gq6vlHKj1rv5iSi-9fMcLg2owyCk3wAtRcceVewP34hERzXGTN0BWKkYE9aFa6XLq5hxbQe0ofjrzHUYvh~9wGzAzQYLUR~E7M3C0FD1WSeQ76b3O9no9Anu0LchnH8SDXaaaqaCwtZxWUkHHt1eENwz4-uw9lUIj~0eGYla-N7cJMUnwbfAyj7YkRCqzMe5Eaz0fKz4jtxTH33jSbA9qEuWnxvDN3nRSSqDzTjl9yXv7jmCNMZ50-c4ub1qh26a2-aq9Jl8sh9N~aLFHq7oagEFzh7oHACNZ6rCFvqradBg__"></img>
+        <div className="">
+        <Image
+  src="https://s3-alpha-sig.figma.com/img/8593/6df1/ecb6f53f485edc6892b4d3baafba41e3?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=uKp~GMhuFvyEF8QwZVzJGhJyMBw0F0F1IDGxY7i3K-gq6vlHKj1rv5iSi-9fMcLg2owyCk3wAtRcceVewP34hERzXGTN0BWKkYE9aFa6XLq5hxbQe0ofjrzHUYvh~9wGzAzQYLUR~E7M3C0FD1WSeQ76b3O9no9Anu0LchnH8SDXaaaqaCwtZxWUkHHt1eENwz4-uw9lUIj~0eGYla-N7cJMUnwbfAyj7YkRCqzMe5Eaz0fKz4jtxTH33jSbA9qEuWnxvDN3nRSSqDzTjl9yXv7jmCNMZ50-c4ub1qh26a2-aq9Jl8sh9N~aLFHq7oagEFzh7oHACNZ6rCFvqradBg__"
+  alt="Resultado de predicción"
+  width={300}
+  height={300}
+  className="rounded-xl object-contain"
+/>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-4 mt-8">

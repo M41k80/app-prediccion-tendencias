@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const LoginModal = ({
@@ -6,109 +7,120 @@ const LoginModal = ({
 }: {
   handleShowModalLogin: () => void;
 }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Activar animación de entrada
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 10);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Cerrar con animación de salida
+  const handleClose = () => {
+    setIsVisible(false);
+    setTimeout(() => {
+      handleShowModalLogin(); // Desmontar modal desde el padre
+    }, 300); // Igual duración que la animación
+  };
+
   return (
     <div
-      className="w-full h-full absolute top-0 backdrop-filter backdrop-brightness-75 backdrop-blur-md flex justify-center items-center"
-      onClick={handleShowModalLogin}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm px-4"
+      onClick={handleClose}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative bg-white rounded-2xl shadow px-16"
+        className={`relative bg-white rounded-2xl shadow p-6 w-full max-w-md transform transition-all duration-300 ${
+          isVisible
+            ? "opacity-100 scale-100 translate-y-0"
+            : "opacity-0 scale-95 translate-y-4"
+        }`}
       >
+        {/* Botón de cerrar */}
         <button
           type="button"
-          className="absolute top-3 right-2.5 cursor-pointer text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close"
-          onClick={handleShowModalLogin}
+          className="absolute top-4 right-4 text-gray-400 hover:text-gray-900 p-1.5 rounded-lg cursor-pointer"
+          onClick={handleClose}
         >
           <Image
             src="https://www.svgrepo.com/show/521106/close.svg"
-            alt="Close"
+            alt="Cerrar"
             width={20}
             height={20}
-            className="w-5 h-5"
-          ></Image>
-          <span className="sr-only">Close popup</span>
+            className="w-8 h-8"
+          />
+          <span className="sr-only">Cerrar</span>
         </button>
 
-        <div className="p-5">
-          <h3 className="text-2xl mb-0.5 font-medium"></h3>
-          <p className="mb-4 text-sm font-normal text-gray-800"></p>
+        {/* Contenido */}
+        <div className="p-4 sm:p-6">
+          <h3 className="text-2xl font-semibold text-center text-[#426CE5] mb-6">
+            Iniciar sesión
+          </h3>
 
-          <div className="text-center">
-            <p className="mb-3 text-2xl font-semibold text-[#426CE5]">
-              Iniciar sesión
-            </p>
-          </div>
-
-          <div className="mt-7 flex justify-center gap-4">
-            <button className="inline-flex h-10 items-center justify-center gap-2 rounded-full border border-slate-300 bg-white p-2 text-sm font-medium outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60">
+          {/* Botones sociales */}
+          <div className="flex justify-center gap-4 mb-6">
+            <button className="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 bg-white hover:bg-gray-100 transition">
               <Image
-                width={100}
-                height={100}
                 src="https://www.svgrepo.com/show/512321/google-178.svg"
                 alt="Google"
-                className="h-[18px] w-[18px]"
+                width={18}
+                height={18}
               />
             </button>
-
-            <button className="inline-flex h-10 items-center justify-center gap-2 rounded-full border border-slate-300 bg-white p-2 text-sm font-medium outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60">
+            <button className="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 bg-white hover:bg-gray-100 transition">
               <Image
-                width={100}
-                height={100}
                 src="https://www.svgrepo.com/show/512419/linkedin-161.svg"
-                alt="Linkedin"
-                className="h-[18px] w-[18px] "
+                alt="LinkedIn"
+                width={18}
+                height={18}
               />
             </button>
           </div>
-          <p className="mt-5 text-sm leading-4 text-slate-600 mb-6 text-center">
+
+          <p className="text-sm text-slate-600 text-center mb-6">
             O usa tu email para iniciar sesión
           </p>
 
+          {/* Formulario */}
           <form className="w-full">
-            <label htmlFor="email" className="sr-only">
-              Nombre de Usuario
-            </label>
-            <div className="relative flex items-center mt-4">
+            <div className="relative mb-4">
               <Image
                 src="https://www.svgrepo.com/show/521128/email-1.svg"
-                alt="Google"
-                width={100}
-                height={100}
-                className="absolute h-[18px] w-[18px] ml-3"
-              ></Image>
+                alt="Correo"
+                width={18}
+                height={18}
+                className="absolute left-3 top-2.5"
+              />
               <input
-                name="email"
                 type="email"
-                autoComplete="email"
+                name="email"
+                placeholder="Correo electrónico"
                 required
-                className="block w-full rounded-lg border border-gray-300 pr-3 pl-10 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-                placeholder="Nombre de Usuario"
+                className="w-full pl-10 pr-3 py-2 rounded-lg border border-gray-300 text-sm placeholder-gray-400 shadow-sm focus:ring-1 focus:ring-blue-500 focus:ring-offset-0"
               />
             </div>
-            <label htmlFor="password" className="sr-only">
-              Contraseña
-            </label>
-            <div className="relative flex items-center mt-4">
+
+            <div className="relative mb-6">
               <Image
                 src="https://www.svgrepo.com/show/532323/lock-alt.svg"
-                alt="Google"
-                width={100}
-                height={100}
-                className="absolute h-[18px] w-[18px] ml-3"
-              ></Image>
+                alt="Contraseña"
+                width={18}
+                height={18}
+                className="absolute left-3 top-2.5"
+              />
               <input
-                name="password"
                 type="password"
-                autoComplete="current-password"
-                required
-                className="block w-full rounded-lg border border-gray-300 pr-3 pl-10 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                name="password"
                 placeholder="Contraseña"
+                required
+                className="w-full pl-10 pr-3 py-2 rounded-lg border border-gray-300 text-sm placeholder-gray-400 shadow-sm focus:ring-1 focus:ring-blue-500 focus:ring-offset-0"
               />
             </div>
+
             <button
               type="submit"
-              className="mt-4 mb-3 inline-flex w-full cursor-pointer items-center justify-center rounded-lg bg-[#426CE5] p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+              className="w-full cursor-pointer bg-[#426CE5] hover:bg-[#375CC7] text-white text-sm font-medium py-2.5 rounded-lg transition-colors"
             >
               Iniciar sesión
             </button>
