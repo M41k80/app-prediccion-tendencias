@@ -4,6 +4,17 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div>
+      <header className="container mx-auto px-4 py-6 flex justify-between items-center">
+        <h1 className="text-xl font-medium">Bienvenido a (nombre de la app)</h1>
+        <div className="flex gap-4">
+          <Link href="/login" className="text-gray-700 hover:text-gray-900">
+            Iniciar sesión
+          </Link>
+          <Link href="/register" className="text-gray-700 hover:text-gray-900">
+            Registrarse
+          </Link>
+        </div>
+      </header>
     <main className="flex-1">
         <div className="container mx-auto px-4 py-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">

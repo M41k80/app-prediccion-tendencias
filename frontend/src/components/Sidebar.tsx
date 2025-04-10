@@ -1,36 +1,124 @@
+"use client";
 import {
   Home,
   HelpCircle,
   FilePlus,
   History,
   CircleUserRound,
-} from "lucide-react"
+  Menu,
+} from "lucide-react";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const sidebarItems = [
-{icon: Home, label: "Inicio"},
-{icon: FilePlus, label: "Nueva Predicción"},
-{icon: History, label: "Historial"},
-{icon: CircleUserRound, label: "Perfil"},
-{icon: HelpCircle, label: "Ayuda"}]
-
+  { icon: Home, label: "Inicio", path: "/dashboard" },
+  { icon: FilePlus, label: "Nueva Predicción", path: "/prediccion" },
+  { icon: History, label: "Historial de Predicciones", path: "/historial" },
+  { icon: CircleUserRound, label: "Perfil", path: "/perfil" },
+  { icon: HelpCircle, label: "Ayuda", path: "/ayuda" },
+];
 
 export default function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+
+  const handleNavigate = (path: string) => {
+    router.push(path);
+    setIsOpen(false);
+  };
+
   return (
-    <aside className="w-1/7 bg-gris text-white flex flex-col items-center py-6 space-y-8">
-      {sidebarItems.map(({icon:Icon, label}, idx) => (
-        <div key={idx} className="flex flex-raw items-center space-y-2 gap-2 hover:bg-gris2 cursor-pointer w-full py-2 px-4">
-        <Icon
-          className="w-auto h-auto"
-          color="black"
-          strokeWidth={1.5}
-          strokeLinecap="round"
-          strokeLinejoin="round"
+    <>
+      {/* Botón hamburguesa para móvil */}
+      <div className="md:hidden p-4 bg-gray-100">
+        <Menu
+          className="text-black cursor-pointer"
+          onClick={() => setIsOpen(!isOpen)}
         />
-        <span className="text-base font-semibold text-black">
-          {label}
-        </span>
+      </div>
+
+      {/* Sidebar Desktop */}
+      <aside className="hidden md:flex w-1/6 bg-gray-100 text-black flex-col items-center py-6 space-y-8">
+        {/* Logo */}
+        <div
+          className="cursor-pointer mb-4"
+          onClick={() => handleNavigate("/")}
+        >
+          <Image
+            src="/logo.png" 
+            alt="Logo de la plataforma"
+            width={60}
+            height={30}
+            className="object-contain mx-auto"
+            priority
+          />
         </div>
-      ))}
-    </aside>
-  )
+
+        {sidebarItems.map(({ icon: Icon, label, path }, idx) => (
+          <div
+            key={idx}
+            className="flex items-center gap-2 hover:bg-gray-200 cursor-pointer w-full py-2 px-4"
+            onClick={() => handleNavigate(path)}
+          >
+            <Icon className="w-6 h-6" strokeWidth={1.5} />
+            <span className="text-base font-semibold text-black">{label}</span>
+          </div>
+        ))}
+
+        <h2 className="mt-auto text-black font-semibold cursor-pointer">
+          Cerrar Sesión
+        </h2>
+      </aside>
+
+      {/* Sidebar Móvil */}
+      {isOpen && (
+        <motion.aside
+          initial={{ x: "-100%" }}
+          animate={{ x: 0 }}
+          exit={{ x: "-100%" }}
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          className="fixed top-0 left-0 w-2/3 h-full z-50 p-6 flex flex-col space-y-6 md:hidden bg-gray-100"
+        >
+          {/* Logo móvil */}
+          <div
+            className="cursor-pointer mb-4 flex justify-center"
+            onClick={() => handleNavigate("/dashboard")}
+          >
+            <Image
+              src="/logo.png"
+              alt="Logo de la plataforma"
+              width={60}
+              height={30}
+              className="object-contain"
+              priority
+            />
+          </div>
+
+          <button
+            className="self-end text-black mb-4 cursor-pointer"
+            onClick={() => setIsOpen(false)}
+          >
+            ✕
+          </button>
+
+          {sidebarItems.map(({ icon: Icon, label, path }, idx) => (
+            <div
+              key={idx}
+              className="flex items-center gap-3 hover:bg-gray-200 cursor-pointer py-2 px-3 rounded"
+              onClick={() => handleNavigate(path)}
+            >
+              <Icon className="w-5 h-5" strokeWidth={1.5} />
+              <span className="text-base font-semibold text-black">{label}</span>
+            </div>
+          ))}
+
+          <h2 className="mt-auto text-black font-semibold text-center cursor-pointer">
+            Cerrar Sesión
+          </h2>
+        </motion.aside>
+      )}
+    </>
+  );
 }

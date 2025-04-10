@@ -4,7 +4,7 @@ import InfoCard from "@/components/InfoCard"
 
 const Dashboard = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex flex-col md:flex-row min-h-screen">
       <Sidebar />
       <main className="flex-1 bg-white p-8">
         <DashboardHeader />
