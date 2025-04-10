@@ -47,7 +47,7 @@ export default function Sidebar() {
           onClick={() => handleNavigate("/")}
         >
           <Image
-            src="/logo.png" 
+            src="/logo.png"
             alt="Logo de la plataforma"
             width={60}
             height={30}
@@ -110,7 +110,9 @@ export default function Sidebar() {
               onClick={() => handleNavigate(path)}
             >
               <Icon className="w-5 h-5" strokeWidth={1.5} />
-              <span className="text-base font-semibold text-black">{label}</span>
+              <span className="text-base font-semibold text-black">
+                {label}
+              </span>
             </div>
           ))}
 

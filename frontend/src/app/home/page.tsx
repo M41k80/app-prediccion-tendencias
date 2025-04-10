@@ -8,22 +8,27 @@ import RegisterModal from "@/components/RegisterModal";
 const Home = () => {
   const [showModalLogin, setShowModalLogin] = useState(false);
   const [showModalRegister, setShowModalRegister] = useState(false);
-  
+
   const handleShowModalLogin = () => {
     setShowModalLogin(!showModalLogin);
   };
-  
+
   const handleShowModalRegister = () => {
-    setShowModalRegister(!showModalRegister)
+    setShowModalRegister(!showModalRegister);
   };
 
-
   return (
-
     <div className="p-8">
-        <NavBar handleShowModalLogin={handleShowModalLogin} handleShowModalRegister={handleShowModalRegister}/>
-        {showModalLogin && <LoginModal handleShowModalLogin={handleShowModalLogin} />}
-        {showModalRegister && <RegisterModal handleShowModalRegister={handleShowModalRegister} />}
+      <NavBar
+        handleShowModalLogin={handleShowModalLogin}
+        handleShowModalRegister={handleShowModalRegister}
+      />
+      {showModalLogin && (
+        <LoginModal handleShowModalLogin={handleShowModalLogin} />
+      )}
+      {showModalRegister && (
+        <RegisterModal handleShowModalRegister={handleShowModalRegister} />
+      )}
       <div className="flex mt-12 gap-4">
         <div className="space-y-6">
           <div className="text-4xl sm:text-5xl font-bold leading-tight">
