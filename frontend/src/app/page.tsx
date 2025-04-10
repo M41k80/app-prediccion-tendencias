@@ -1,31 +1,37 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useState } from "react";
+"use client"
+import Image from "next/image"
+import Link from "next/link"
+import React, { useState } from "react"
 
-import LoginModal from "@/components/LoginModal";
-import RegisterModal from "@/components/RegisterModal";
+import LoginModal from "@/components/LoginModal"
+import RegisterModal from "@/components/RegisterModal"
+import PlanesModal from "@/components/PlanesModal" 
 
 export default function Home() {
-  const [showModalLogin, setShowModalLogin] = useState(false);
-  const [showModalRegister, setShowModalRegister] = useState(false);
+  const [showModalLogin, setShowModalLogin] = useState(false)
+  const [showModalRegister, setShowModalRegister] = useState(false)
+  const [showModalPlanes, setShowModalPlanes] = useState(false)
 
   const handleShowModalLogin = () => {
-    setShowModalLogin(!showModalLogin);
-  };
+    setShowModalLogin(!showModalLogin)
+  }
 
   const handleShowModalRegister = () => {
-    setShowModalRegister(!showModalRegister);
-  };
+    setShowModalRegister(!showModalRegister)
+  }
+
+  const handleShowModalPlanes = () => {
+    setShowModalPlanes(true)
+  }
 
   return (
     <div>
-      {showModalLogin && (
-        <LoginModal handleShowModalLogin={handleShowModalLogin} />
-      )}
-      {showModalRegister && (
-        <RegisterModal handleShowModalRegister={handleShowModalRegister} />
-      )}
+      {/* Modales */}
+      {showModalLogin && <LoginModal handleShowModalLogin={handleShowModalLogin} />}
+      {showModalRegister && <RegisterModal handleShowModalRegister={handleShowModalRegister} />}
+      {showModalPlanes && <PlanesModal handleClose={() => setShowModalPlanes(false)} />}
+
+      {/* Header */}
       <header className="container mx-auto px-4 py-6 flex justify-between items-center">
         <h1 className="text-xl font-medium cursor-pointer">
           Bienvenido a (nombre de la app)
@@ -45,6 +51,8 @@ export default function Home() {
           </button>
         </div>
       </header>
+
+      {/* Contenido */}
       <main className="flex-1">
         <div className="container mx-auto px-4 py-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -64,20 +72,22 @@ export default function Home() {
                 >
                   Registrarse
                 </button>
-                <Link
-                  href="/#"
-                  className="bg-white hover:bg-gray-100 text-gray-800 border border-gray-300 px-8 py-3 rounded-md font-medium"
+                <button
+                  onClick={handleShowModalPlanes}
+                  className="bg-white hover:bg-gray-100 text-gray-800 border border-gray-300 px-8 py-3 rounded-md font-medium cursor-pointer"
                 >
                   Explorar planes
-                </Link>
+                </button>
               </div>
             </div>
+
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <div className="h-40 mb-6 relative">
                 <Image
                   src="/imagen2.jpg"
                   alt="Gráfico de tendencias"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-contain"
                 />
               </div>
@@ -117,22 +127,17 @@ export default function Home() {
         </div>
       </main>
 
+      {/* Footer */}
       <footer className="border-t border-gray-200 mt-16">
         <div className="container mx-auto px-4 py-6 flex flex-wrap justify-between items-center">
           <div className="flex gap-6">
-            <Link
-              href="/contacto"
-              className="text-gray-600 hover:text-gray-900"
-            >
+            <Link href="/contacto" className="text-gray-600 hover:text-gray-900">
               Contacto
             </Link>
           </div>
 
           <div className="flex gap-6">
-            <Link
-              href="/politicas"
-              className="text-gray-600 hover:text-gray-900"
-            >
+            <Link href="/politicas" className="text-gray-600 hover:text-gray-900">
               Política de privacidad
             </Link>
             <Link href="/terms" className="text-gray-600 hover:text-gray-900">
@@ -142,5 +147,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
