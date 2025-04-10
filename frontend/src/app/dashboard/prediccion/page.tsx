@@ -1,54 +1,52 @@
-"use client"
+"use client";
 
-import React from "react"
-import { useState, useEffect } from "react"
-import Sidebar from "@/components/Sidebar"
-import Image from "next/image"
-import { format } from "date-fns"
-import { DayPicker } from "react-day-picker"
-import { addDays, isBefore } from "date-fns"
-import { es } from "date-fns/locale"
-import { ChevronDown, Check, Calendar as CalendarIcon } from "lucide-react"
-
+import React from "react";
+import { useState, useEffect } from "react";
+import Sidebar from "@/components/Sidebar";
+import Image from "next/image";
+import { format } from "date-fns";
+import { DayPicker } from "react-day-picker";
+import { addDays, isBefore } from "date-fns";
+import { es } from "date-fns/locale";
+import { ChevronDown, Check, Calendar as CalendarIcon } from "lucide-react";
 
 type DateRange = {
-  from: Date
-  to: Date 
-}
+  from: Date;
+  to: Date;
+};
 
 type Producto = {
   ProductID: string;
   ProductName: string;
   Category: string;
-}
+};
 
 export default function NuevaPrediccionPage() {
-  const [loading, setLoading] = useState(false)
-  const [tienda, setTienda] = useState<string>("")
-  const [producto, setProducto] = useState<string>("")
+  const [loading, setLoading] = useState(false);
+  const [tienda, setTienda] = useState<string>("");
+  const [producto, setProducto] = useState<string>("");
 
-  const [productos, setProductos] = useState<Producto[]>([])
-  const [isCalendarOpen, setIsCalendarOpen] = useState(false)
-  const [totalDays, setTotalDays] = useState<number>(7)
+  const [productos, setProductos] = useState<Producto[]>([]);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+  const [totalDays, setTotalDays] = useState<number>(7);
 
-  const today = new Date()
-  today.setHours(0, 0, 0, 0)
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
 
   const [dateRange, setDateRange] = useState<DateRange>({
     from: today,
     to: addDays(today, 7),
-  })
+  });
 
-  const [isTiendaOpen, setIsTiendaOpen] = useState(false)
-  const [isProductoOpen, setIsProductoOpen] = useState(false)
+  const [isTiendaOpen, setIsTiendaOpen] = useState(false);
+  const [isProductoOpen, setIsProductoOpen] = useState(false);
 
-  const calendarRef = React.useRef<HTMLDivElement>(null)
-  const tiendaRef = React.useRef<HTMLDivElement>(null)
-  const productoRef = React.useRef<HTMLDivElement>(null)
-
+  const calendarRef = React.useRef<HTMLDivElement>(null);
+  const tiendaRef = React.useRef<HTMLDivElement>(null);
+  const productoRef = React.useRef<HTMLDivElement>(null);
 
   const handleGenerar = async () => {
-    setLoading(true)
+    setLoading(true);
     const storeIndex = tiendas.indexOf(tienda); // Encuentra el índice de la tienda seleccionada
     if (storeIndex === -1) return; // Si no se encuentra la tienda, evitar hacer la solicitud
 
@@ -57,7 +55,11 @@ export default function NuevaPrediccionPage() {
       store_id: storeIndex + 1, // Usamos el índice de la tienda para asignar un ID (1 basado)
       promo: Math.floor(Math.random() * 2), // Generamos aleatoriamente 0 o 1
       school_holiday: Math.floor(Math.random() * 2), // Generamos aleatoriamente 0 o 1
-      n_days: Math.floor((dateRange.to.getTime() - dateRange.from.getTime()) / (1000 * 60 * 60 * 24)) + 1, // Número de días entre el rango
+      n_days:
+        Math.floor(
+          (dateRange.to.getTime() - dateRange.from.getTime()) /
+            (1000 * 60 * 60 * 24)
+        ) + 1, // Número de días entre el rango
       start_date: format(dateRange.from, "yyyy-MM-dd"), // Fecha de inicio formateada
       store_type: "a", // Valor fijo
       assortment: "b", // Valor fijo
@@ -65,9 +67,10 @@ export default function NuevaPrediccionPage() {
       product_name: producto, // Nombre del producto
       weather: Math.floor(Math.random() * 3) + 1, // Generamos un valor aleatorio entre 1 y 3
       sentiment_score: (Math.random() * 1).toFixed(2), // Generamos un valor aleatorio entre 0 y 1
-    }
+    };
 
     try {
+<<<<<<< HEAD
       const response = await fetch('https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/predict/', {
         method: 'POST',
         headers: {
@@ -76,6 +79,19 @@ export default function NuevaPrediccionPage() {
         },
         body: JSON.stringify(requestData),
       });
+=======
+      const response = await fetch(
+        "https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/predict/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjU0NDUxLCJpYXQiOjE3NDQyNTA4NTEsImp0aSI6ImY0ZDNmOTNhMTBmMDQ1MzhhZjkzZWM3YjI5ZjQ5MTkwIiwidXNlcl9pZCI6MX0.iFH8uXxwS5R3Ia7Wh7Mtxeio_vS3Pt3vREBVG6W5_Bs`, // Cambia tu token aquí
+          },
+          body: JSON.stringify(requestData),
+        }
+      );
+>>>>>>> b55f3ffb6b52739d0776b9057d456db0894a976d
 
       if (!response.ok) {
         throw new Error(`Error HTTP: ${response.status}`);
@@ -83,78 +99,123 @@ export default function NuevaPrediccionPage() {
 
       const result = await response.json();
       console.log("Predicción exitosa:", result);
-      
+
       // Aquí puedes manejar la respuesta (mostrar en UI, etc.)
-      
     } catch (error) {
-      console.error('Error en la solicitud:', error);
+      console.error("Error en la solicitud:", error);
       // Mostrar error al usuario
     } finally {
       setLoading(false);
     }
-}
-
+  };
 
   useEffect(() => {
     if (dateRange.from && dateRange.to) {
-      const days = Math.floor((dateRange.to.getTime() - dateRange.from.getTime()) / (1000 * 60 * 60 * 24)) + 1
-      setTotalDays(days)
+      const days =
+        Math.floor(
+          (dateRange.to.getTime() - dateRange.from.getTime()) /
+            (1000 * 60 * 60 * 24)
+        ) + 1;
+      setTotalDays(days);
     }
-  }, [dateRange])
+  }, [dateRange]);
 
   const tiendas = [
-    "Walmart", "Sam's Club", "Costco", "Target", "Kroger", "Home Depot", "Lowe's", "CVS", "Walgreens", 
-    "Best Buy", "Macy's", "Sears", "JCPenney", "Nordstrom", "Whole Foods", "Trader Joe's", "Safeway", 
-    "Albertsons", "Lidl", "Aldi", "Publix", "Meijer", "Dollar General", "T.J. Maxx", "Marshalls", 
-    "Bed Bath & Beyond", "Petco", "Petsmart", "Michaels", "Hobby Lobby", "Bath & Body Works"
-  ]
-  
+    "Walmart",
+    "Sam's Club",
+    "Costco",
+    "Target",
+    "Kroger",
+    "Home Depot",
+    "Lowe's",
+    "CVS",
+    "Walgreens",
+    "Best Buy",
+    "Macy's",
+    "Sears",
+    "JCPenney",
+    "Nordstrom",
+    "Whole Foods",
+    "Trader Joe's",
+    "Safeway",
+    "Albertsons",
+    "Lidl",
+    "Aldi",
+    "Publix",
+    "Meijer",
+    "Dollar General",
+    "T.J. Maxx",
+    "Marshalls",
+    "Bed Bath & Beyond",
+    "Petco",
+    "Petsmart",
+    "Michaels",
+    "Hobby Lobby",
+    "Bath & Body Works",
+  ];
+
   useEffect(() => {
     const fetchProductos = async () => {
       try {
+<<<<<<< HEAD
         const response = await fetch("https://profits-beginner-warcraft-marking.trycloudflare.com/products");
         const data = await response.json()
         setProductos(data.products)
+=======
+        const response = await fetch(
+          "https://sharing-sections-mil-adverse.trycloudflare.com/products"
+        );
+        const data = await response.json();
+        setProductos(data.products);
+>>>>>>> b55f3ffb6b52739d0776b9057d456db0894a976d
       } catch (error) {
-        console.error("Error al obtener los productos", error)
+        console.error("Error al obtener los productos", error);
       }
-    }
-    fetchProductos()
-  }, [])
-
-  
-  
-
+    };
+    fetchProductos();
+  }, []);
 
   // Cerrar dropdowns al hacer clic fuera
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (calendarRef.current && !calendarRef.current.contains(event.target as Node)) {
-        setIsCalendarOpen(false)
+      if (
+        calendarRef.current &&
+        !calendarRef.current.contains(event.target as Node)
+      ) {
+        setIsCalendarOpen(false);
       }
-      if (tiendaRef.current && !tiendaRef.current.contains(event.target as Node)) {
-        setIsTiendaOpen(false)
+      if (
+        tiendaRef.current &&
+        !tiendaRef.current.contains(event.target as Node)
+      ) {
+        setIsTiendaOpen(false);
       }
-      if (productoRef.current && !productoRef.current.contains(event.target as Node)) {
-        setIsProductoOpen(false)
+      if (
+        productoRef.current &&
+        !productoRef.current.contains(event.target as Node)
+      ) {
+        setIsProductoOpen(false);
       }
     }
 
-    document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const formatDateRange = () => {
-    if (!dateRange.from) return "Seleccionar fecha"
+    if (!dateRange.from) return "Seleccionar fecha";
 
     if (dateRange.from && dateRange.to) {
-      return `${format(dateRange.from, "dd/MM/yyyy")} - ${format(dateRange.to, "dd/MM/yyyy")} (${totalDays} días)`
+      return `${format(dateRange.from, "dd/MM/yyyy")} - ${format(
+        dateRange.to,
+        "dd/MM/yyyy"
+      )} (${totalDays} días)`;
     }
 
-    return format(dateRange.from, "dd/MM/yyyy")
-  }
+    return format(dateRange.from, "dd/MM/yyyy");
+  };
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
@@ -163,7 +224,9 @@ export default function NuevaPrediccionPage() {
       <main className="flex-1 px-4 sm:px-6 lg:px-8 py-8 w-full">
         {/* Encabezado */}
         <header className="flex justify-between items-center mb-10 max-w-5xl mx-auto">
-          <h1 className="text-2xl font-semibold text-black">Nueva predicción</h1>
+          <h1 className="text-2xl font-semibold text-black">
+            Nueva predicción
+          </h1>
           <Image
             src="/perfil.png"
             alt="Avatar del usuario"
@@ -182,10 +245,12 @@ export default function NuevaPrediccionPage() {
                   ¿Querés generar una nueva predicción?
                 </h2>
                 <p className="text-center text-sm text-gray-600 leading-snug mb-8 max-w-2xl mx-auto">
-                  ¡Buenísimo! Acá te guiamos paso a paso para que lo hagas sin complicaciones.
-                  Primero, seleccioná la tienda que querés analizar. Después, elegí el rango de fechas que
-                  te interesa. Podés predecir ventas de los próximos días, semanas o el período que necesites.
-                  Por último, seleccioná el producto sobre el cual querés obtener la predicción.
+                  ¡Buenísimo! Acá te guiamos paso a paso para que lo hagas sin
+                  complicaciones. Primero, seleccioná la tienda que querés
+                  analizar. Después, elegí el rango de fechas que te interesa.
+                  Podés predecir ventas de los próximos días, semanas o el
+                  período que necesites. Por último, seleccioná el producto
+                  sobre el cual querés obtener la predicción.
                 </p>
 
                 {/* Formularios */}
@@ -209,13 +274,15 @@ export default function NuevaPrediccionPage() {
                               <li
                                 key={t}
                                 onClick={() => {
-                                  setTienda(t)
-                                  setIsTiendaOpen(false)
+                                  setTienda(t);
+                                  setIsTiendaOpen(false);
                                 }}
                                 className="relative flex cursor-pointer select-none items-center px-3 py-2 text-sm hover:bg-blue-100"
                               >
                                 {t}
-                                {tienda === t && <Check className="ml-auto h-4 w-4 text-blue-500" />}
+                                {tienda === t && (
+                                  <Check className="ml-auto h-4 w-4 text-[#426CE5]" />
+                                )}
                               </li>
                             ))}
                           </ul>
@@ -240,20 +307,23 @@ export default function NuevaPrediccionPage() {
                       {isProductoOpen && (
                         <div className="absolute z-10 mt-1 w-full rounded-md border border-gray-200 bg-white shadow-lg">
                           <ul className="max-h-60 overflow-auto py-1">
-                            {Array.isArray(productos) && productos.map((p) => (
-                              <li
-                                key={p.ProductID}  
-                                onClick={() => {
-                                  setProducto(p.ProductName);  
-                                  setIsProductoOpen(false);
-                                }}
-                                className="relative flex cursor-pointer select-none items-center px-3 py-2 text-sm hover:bg-blue-100"
-                              >
-                                {p.ProductName}  {/* Muestra el nombre del producto */}
-                                {producto === p.ProductName && <Check className="ml-auto h-4 w-4 text-blue-500" />}
-                              </li>
-                            ))}
-
+                            {Array.isArray(productos) &&
+                              productos.map((p) => (
+                                <li
+                                  key={p.ProductID}
+                                  onClick={() => {
+                                    setProducto(p.ProductName);
+                                    setIsProductoOpen(false);
+                                  }}
+                                  className="relative flex cursor-pointer select-none items-center px-3 py-2 text-sm hover:bg-blue-100"
+                                >
+                                  {p.ProductName}{" "}
+                                  {/* Muestra el nombre del producto */}
+                                  {producto === p.ProductName && (
+                                    <Check className="ml-auto h-4 w-4 text-[#426CE5]" />
+                                  )}
+                                </li>
+                              ))}
                           </ul>
                         </div>
                       )}
@@ -262,7 +332,9 @@ export default function NuevaPrediccionPage() {
 
                   {/* Selector de Rango de Fechas */}
                   <div className="space-y-2" ref={calendarRef}>
-                    <label className="block font-medium">Rango de fechas para predicción</label>
+                    <label className="block font-medium">
+                      Rango de fechas para predicción
+                    </label>
                     <div className="relative">
                       <button
                         type="button"
@@ -284,14 +356,14 @@ export default function NuevaPrediccionPage() {
                             selected={dateRange}
                             onSelect={(range) => {
                               if (range) {
-                                setDateRange(range as DateRange)
+                                setDateRange(range as DateRange);
                               }
                             }}
                             numberOfMonths={2}
                             locale={es}
                             disabled={(date) => isBefore(date, today)}
                             modifiersClassNames={{
-                              selected: "bg-blue-500 text-white rounded-md",
+                              selected: "bg-[#426CE5] text-white rounded-md",
                               today: "bg-gray-100 font-bold rounded-md",
                             }}
                             styles={{
@@ -308,7 +380,7 @@ export default function NuevaPrediccionPage() {
               <div className="text-center">
                 <button
                   onClick={handleGenerar}
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm px-8 py-2.5 rounded-md transition-colors cursor-pointer"
+                  className="bg-[#426CE5] hover:bg-[#375CC7] text-white font-semibold text-sm px-8 py-2.5 rounded-md transition-colors cursor-pointer"
                 >
                   Generar predicción
                 </button>
@@ -316,11 +388,13 @@ export default function NuevaPrediccionPage() {
             </div>
           ) : (
             <div className="flex flex-col items-center gap-6">
-              <p className="text-lg font-semibold text-black">Generando predicción</p>
+              <p className="text-lg font-semibold text-black">
+                Generando predicción
+              </p>
               <div className="w-28 h-28 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
               <button
                 onClick={() => setLoading(false)}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm px-8 py-2.5 rounded-md transition-colors cursor-pointer"
+                className="bg-[#426CE5] hover:bg-[#375CC7] text-white font-semibold text-sm px-8 py-2.5 rounded-md transition-colors cursor-pointer"
               >
                 Volver atrás
               </button>
@@ -328,15 +402,6 @@ export default function NuevaPrediccionPage() {
           )}
         </section>
       </main>
-    </div >
+    </div>
   );
 }
-
-
-
-
-
-
-
-
-

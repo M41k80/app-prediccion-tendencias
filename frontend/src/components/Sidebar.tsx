@@ -14,10 +14,14 @@ import Image from "next/image";
 
 const sidebarItems = [
   { icon: Home, label: "Inicio", path: "/dashboard" },
-  { icon: FilePlus, label: "Nueva Predicción", path: "dashboard/prediccion" },
-  { icon: History, label: "Historial de Predicciones", path: "dashboard/historial" },
-  { icon: CircleUserRound, label: "Perfil", path: "dashboard/perfil" },
-  { icon: HelpCircle, label: "Ayuda", path: "dashboard/ayuda" },
+  { icon: FilePlus, label: "Nueva Predicción", path: "/dashboard/prediccion" },
+  {
+    icon: History,
+    label: "Historial de Predicciones",
+    path: "/dashboard/historial",
+  },
+  { icon: CircleUserRound, label: "Perfil", path: "/dashboard/perfil" },
+  { icon: HelpCircle, label: "Ayuda", path: "/dashboard/ayuda" },
 ];
 
 export default function Sidebar() {
@@ -47,7 +51,7 @@ export default function Sidebar() {
           onClick={() => handleNavigate("/")}
         >
           <Image
-            src="/logo.png" 
+            src="/logo.png"
             alt="Logo de la plataforma"
             width={60}
             height={30}
@@ -110,7 +114,9 @@ export default function Sidebar() {
               onClick={() => handleNavigate(path)}
             >
               <Icon className="w-5 h-5" strokeWidth={1.5} />
-              <span className="text-base font-semibold text-black">{label}</span>
+              <span className="text-base font-semibold text-black">
+                {label}
+              </span>
             </div>
           ))}
 

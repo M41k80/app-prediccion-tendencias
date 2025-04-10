@@ -1,22 +1,22 @@
 # **Documentación de la API**
 
 ## **1. Enlaces de las API**
-- **Django (Usuarios)**: [Swagger UI](https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/swagger)
-- **FastAPI**: [Docs](https://extension-rental-freeze-blow.trycloudflare.com/docs)
+- **Django (Usuarios)**: [Swagger UI](https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/swagger)
+- **FastAPI**: [Docs](https://profits-beginner-warcraft-marking.trycloudflare.com/docs)
 
 ---
 
 ## **2. Endpoints de la API**
 
 ### **2.1. Listar Todos los Productos**
-- **URL**: `https://sharing-sections-mil-adverse.trycloudflare.com/products`
+- **URL**: `https://[sharing-sections-mil-adverse.trycloudflare.com](https://profits-beginner-warcraft-marking.trycloudflare.com)/products`
 - **Método**: `GET`
 - **Descripción**: Obtiene una lista de todos los productos.
 
 ---
 
 ### **2.2. Crear Usuario**
-- **URL**: `https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/users/`
+- **URL**: `https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/users/`
 - **Método**: `POST`
 - **Cuerpo de la solicitud**:
     ```json
@@ -30,7 +30,7 @@
 ---
 
 ### **2.3. Login y Obtener Token de Acceso**
-- **URL**: `https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/token/`
+- **URL**: `https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/token/`
 - **Método**: `POST`
 - **Cuerpo de la solicitud**:
     ```json
@@ -51,7 +51,7 @@
 ---
 
 ### **2.4. Actualizar Contraseña o Datos del Usuario**
-- **URL**: `https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/users/{ID}/`
+- **URL**: `https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/users/{ID}/`
 - **Método**: `PUT`
 - **Descripción**: Actualiza los datos del usuario, incluyendo la contraseña.
 - **Cuerpo de la solicitud**:
@@ -66,7 +66,7 @@
 ---
 
 ### **2.5. Realizar Predicciones**
-- **URL**: `https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/predict/`
+- **URL**: `https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/predict/`
 - **Método**: `POST`
 - **Descripción**: Realiza una predicción basada en varios parámetros.
 - **Cuerpo de la solicitud**:
@@ -89,7 +89,7 @@
 ---
 
 ### **2.6. Historial de Predicciones**
-- **URL**: `https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/historial/`
+- **URL**: `https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/historial/`
 - **Método**: `GET`
 - **Descripción**: Obtiene el historial de las predicciones realizadas.
 - **Autenticación**: Incluye el token en la cabecera `Authorization` con el formato `Bearer <access_token>`.
@@ -97,7 +97,7 @@
 ---
 
 ### **2.7. Eliminar Cuenta de Usuario**
-- **URL**: `https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/users/{ID}/`
+- **URL**: `https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/users/{ID}/`
 - **Método**: `DELETE`
 - **Descripción**: Elimina un usuario de la base de datos.
 - **Confirmación**: El sistema preguntará si estás seguro de eliminar tu cuenta.
@@ -112,4 +112,4 @@ Después de realizar el login y obtener el `access_token`, deberás incluirlo en
 
 Ejemplo:
 ```bash
-curl -X GET "https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/historial/" -H "Authorization: Bearer your_access_token_here"
+curl -X GET "https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/historial/" -H "Authorization: Bearer your_access_token_here"
