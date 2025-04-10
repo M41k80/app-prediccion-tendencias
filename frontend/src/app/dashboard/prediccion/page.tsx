@@ -70,7 +70,6 @@ export default function NuevaPrediccionPage() {
     };
 
     try {
-<<<<<<< HEAD
       const response = await fetch('https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/predict/', {
         method: 'POST',
         headers: {
@@ -79,19 +78,6 @@ export default function NuevaPrediccionPage() {
         },
         body: JSON.stringify(requestData),
       });
-=======
-      const response = await fetch(
-        "https://2263-2600-1008-a031-7483-7d42-cfe5-1c0e-32e5.ngrok-free.app/api/predict/",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjU0NDUxLCJpYXQiOjE3NDQyNTA4NTEsImp0aSI6ImY0ZDNmOTNhMTBmMDQ1MzhhZjkzZWM3YjI5ZjQ5MTkwIiwidXNlcl9pZCI6MX0.iFH8uXxwS5R3Ia7Wh7Mtxeio_vS3Pt3vREBVG6W5_Bs`, // Cambia tu token aquí
-          },
-          body: JSON.stringify(requestData),
-        }
-      );
->>>>>>> b55f3ffb6b52739d0776b9057d456db0894a976d
 
       if (!response.ok) {
         throw new Error(`Error HTTP: ${response.status}`);
@@ -157,17 +143,9 @@ export default function NuevaPrediccionPage() {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-<<<<<<< HEAD
         const response = await fetch("https://profits-beginner-warcraft-marking.trycloudflare.com/products");
         const data = await response.json()
         setProductos(data.products)
-=======
-        const response = await fetch(
-          "https://sharing-sections-mil-adverse.trycloudflare.com/products"
-        );
-        const data = await response.json();
-        setProductos(data.products);
->>>>>>> b55f3ffb6b52739d0776b9057d456db0894a976d
       } catch (error) {
         console.error("Error al obtener los productos", error);
       }
