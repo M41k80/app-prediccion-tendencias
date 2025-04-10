@@ -1,40 +1,45 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
-import LoginModal from "@/components/LoginModal"
-import RegisterModal from "@/components/RegisterModal"
-import NavBar from "@/components/NavBar"
-import Image from "next/image"
-import Link from "next/link"
+
+import LoginModal from "@/components/LoginModal";
+import RegisterModal from "@/components/RegisterModal";
 
 export default function Home() {
   const [showModalLogin, setShowModalLogin] = useState(false);
-    const [showModalRegister, setShowModalRegister] = useState(false);
-    
-    const handleShowModalLogin = () => {
-      setShowModalLogin(!showModalLogin);
-    };
-    
-    const handleShowModalRegister = () => {
-      setShowModalRegister(!showModalRegister)
-    };
+  const [showModalRegister, setShowModalRegister] = useState(false);
+
+  const handleShowModalLogin = () => {
+    setShowModalLogin(!showModalLogin);
+  };
+
+  const handleShowModalRegister = () => {
+    setShowModalRegister(!showModalRegister);
+  };
 
   return (
     <div>
-      <NavBar handleShowModalLogin={handleShowModalLogin} handleShowModalRegister={handleShowModalRegister}/>
       {showModalLogin && <LoginModal handleShowModalLogin={handleShowModalLogin} />}
       {showModalRegister && <RegisterModal handleShowModalRegister={handleShowModalRegister} />}
-      {/* <header className="container mx-auto px-4 py-6 flex justify-between items-center">
+      <header className="container mx-auto px-4 py-6 flex justify-between items-center">
         <h1 className="text-xl font-medium">Bienvenido a (nombre de la app)</h1>
         <div className="flex gap-4">
-          <Link href="/login" className="text-gray-700 hover:text-gray-900">
+          <button
+            onClick={handleShowModalLogin}
+            className="text-gray-700 hover:text-gray-900"
+          >
             Iniciar sesión
-          </Link>
-          <Link href="/register" className="text-gray-700 hover:text-gray-900">
+          </button>
+          <button
+            onClick={handleShowModalRegister}
+            className="text-gray-700 hover:text-gray-900"
+          >
             Registrarse
-          </Link>
+          </button>
         </div>
-      </header> */}
-    <main className="flex-1">
+      </header>
+      <main className="flex-1">
         <div className="container mx-auto px-4 py-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -46,12 +51,12 @@ export default function Home() {
                 tiempo real basadas en <span className="text-blue-600">inteligencia artificial</span>.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Link
-                  href="/#"
+                <button
+                  onClick={handleShowModalRegister}
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-medium"
                 >
                   Registrarse
-                </Link>
+                </button>
                 <Link
                   href="/#"
                   className="bg-white hover:bg-gray-100 text-gray-800 border border-gray-300 px-8 py-3 rounded-md font-medium"
@@ -63,10 +68,11 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <div className="h-40 mb-6 relative">
                 <Image
-                  src="/placeholder.svg?height=160&width=400"
+                  src="/imagen2.jpg"
                   alt="Gráfico de tendencias"
                   fill
                   className="object-contain"
+
                 />
               </div>
               <div className="flex items-center justify-between">
@@ -95,7 +101,6 @@ export default function Home() {
 
       <footer className="border-t border-gray-200 mt-16">
         <div className="container mx-auto px-4 py-6 flex flex-wrap justify-between items-center">
-
           <div className="flex gap-6">
             <Link href="/contacto" className="text-gray-600 hover:text-gray-900">
               Contacto
@@ -113,7 +118,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-    
-  )
+  );
 }
-
