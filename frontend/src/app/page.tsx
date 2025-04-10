@@ -1,10 +1,29 @@
+"use client";
+import React, { useState } from "react";
+import LoginModal from "@/components/LoginModal"
+import RegisterModal from "@/components/RegisterModal"
+import NavBar from "@/components/NavBar"
 import Image from "next/image"
 import Link from "next/link"
 
 export default function Home() {
+  const [showModalLogin, setShowModalLogin] = useState(false);
+    const [showModalRegister, setShowModalRegister] = useState(false);
+    
+    const handleShowModalLogin = () => {
+      setShowModalLogin(!showModalLogin);
+    };
+    
+    const handleShowModalRegister = () => {
+      setShowModalRegister(!showModalRegister)
+    };
+
   return (
     <div>
-      <header className="container mx-auto px-4 py-6 flex justify-between items-center">
+      <NavBar handleShowModalLogin={handleShowModalLogin} handleShowModalRegister={handleShowModalRegister}/>
+      {showModalLogin && <LoginModal handleShowModalLogin={handleShowModalLogin} />}
+      {showModalRegister && <RegisterModal handleShowModalRegister={handleShowModalRegister} />}
+      {/* <header className="container mx-auto px-4 py-6 flex justify-between items-center">
         <h1 className="text-xl font-medium">Bienvenido a (nombre de la app)</h1>
         <div className="flex gap-4">
           <Link href="/login" className="text-gray-700 hover:text-gray-900">
@@ -14,7 +33,7 @@ export default function Home() {
             Registrarse
           </Link>
         </div>
-      </header>
+      </header> */}
     <main className="flex-1">
         <div className="container mx-auto px-4 py-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">
