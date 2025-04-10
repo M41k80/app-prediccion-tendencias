@@ -9,6 +9,7 @@ import { addDays, isBefore } from "date-fns";
 import { es } from "date-fns/locale";
 import { ChevronDown, Calendar as CalendarIcon } from "lucide-react";
 
+
 interface PredictionCardProps {
   className?: string;
 }
@@ -158,6 +159,7 @@ export default function PredictionCard({
       console.log("Predicción exitosa:", result);
       toast.success("✅ Predicción generada con éxito.");
       setStatus("success");
+      window.location.reload()
       // Aquí podés hacer más cosas con response.data si lo necesitás
     } catch (error) {
       toast.error("❌ Error al generar la predicción.");

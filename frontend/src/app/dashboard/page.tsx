@@ -1,14 +1,18 @@
 'use client'
 import Sidebar from "@/components/Sidebar";
 import DashboardHeader from "@/components/DashboardHeader";
-import InfoCard from "@/components/InfoCard";
 import PredictionCard from "@/components/PredictionCard";
 import LineChartCard from "@/components/LineChartCard";
 import PieChartSelect from "@/components/PieChartSelect";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import LastPrediction from "@/components/LastPrediction";
+import TrendData from "@/components/TrendData";
+import TrendDataClients from "@/components/TrandDataClients";
+import TrendDataClientPro from "@/components/TrendDataClientPro";
 
 const Dashboard = () => {
+  
 
   const router = useRouter();
 
@@ -42,9 +46,9 @@ const Dashboard = () => {
 
         {/* Tarjetas superiores */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-          <InfoCard title="Último análisis" subtitle="Realizado el 22 de abril de 2024" buttonText="Ver detalle" />
-          <InfoCard title="Tendencia destacada" value="+23%" subtitle="En variable destacada" />
-          <InfoCard title="Promedio de ventas" value="+320" subtitle="En variable destacada" />
+          <LastPrediction title="Último análisis"  buttonText="Ver detalle" />
+          <TrendData title="Tendencia destacada" variableName="Likes"/>
+          <TrendDataClients title="Promedio de ventas" variableName="la ultima predicion" />
         </section>
 
         {/* Predicción + Análisis */}
@@ -54,7 +58,7 @@ const Dashboard = () => {
             <LineChartCard />
           </div>
           <div className="flex flex-col gap-4 h-full space-y-4">
-            <InfoCard title="Promedio de clientes" value="+86" subtitle="En variable destacada" />
+            <TrendDataClientPro title="Promedio de clientes"  variableName="la ultima predicción" />
             <PieChartSelect className="-mt-4" />
           </div>
         </section>
