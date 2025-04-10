@@ -27,7 +27,9 @@ export default function Home() {
         <RegisterModal handleShowModalRegister={handleShowModalRegister} />
       )}
       <header className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <h1 className="text-xl font-medium cursor-pointer">Bienvenido a (nombre de la app)</h1>
+        <h1 className="text-xl font-medium cursor-pointer">
+          Bienvenido a (nombre de la app)
+        </h1>
         <div className="flex gap-4">
           <button
             onClick={handleShowModalLogin}
@@ -53,12 +55,12 @@ export default function Home() {
               <p className="text-lg text-gray-700">
                 Descubre hacia dónde se dirigen los mercados. Usá nuestra
                 herramienta para obtener predicciones en tiempo real basadas en{" "}
-                <span className="text-blue-600">inteligencia artificial</span>.
+                <span className="text-[#426CE5]">inteligencia artificial</span>.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <button
                   onClick={handleShowModalRegister}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-medium cursor-pointer"
+                  className="bg-[#426CE5] hover:bg-[#375CC7] text-white px-8 py-3 rounded-md font-medium cursor-pointer"
                 >
                   Registrarse
                 </button>
@@ -80,7 +82,7 @@ export default function Home() {
                 />
               </div>
               <div className="flex items-center justify-between">
-                <div className="text-4xl font-bold text-blue-600">+23 %</div>
+                <div className="text-4xl font-bold text-[#426CE5]">+23 %</div>
                 <div className="text-sm text-gray-500">Tendencia prevista</div>
               </div>
             </div>
@@ -88,7 +90,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6 mt-16">
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-semibold text-blue-600 mb-4">
+              <h3 className="text-xl font-semibold text-[#426CE5] mb-4">
                 Análisis personalizados
               </h3>
               <p className="text-gray-700">
@@ -96,7 +98,7 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-semibold text-blue-600 mb-4">
+              <h3 className="text-xl font-semibold text-[#426CE5] mb-4">
                 Datos en tiempo real
               </h3>
               <p className="text-gray-700">
@@ -104,7 +106,7 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-semibold text-blue-600 mb-4">
+              <h3 className="text-xl font-semibold text-[#426CE5] mb-4">
                 Comparación de variables
               </h3>
               <p className="text-gray-700">

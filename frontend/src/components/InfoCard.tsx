@@ -1,17 +1,28 @@
 interface InfoCardProps {
-  title?: string
-  subtitle?: string
-  value?: string
-  buttonText?: string
+  title?: string;
+  subtitle?: string;
+  value?: string;
+  buttonText?: string;
 }
 
-export default function InfoCard({ title, subtitle, value, buttonText }: InfoCardProps) {
+export default function InfoCard({
+  title,
+  subtitle,
+  value,
+  buttonText,
+}: InfoCardProps) {
   return (
     <div className="bg-white shadow-sm p-4 flex flex-col justify-between h-full border border-gray-200 rounded-xl">
       <div>
-        {title && <h3 className="text-lg font-semibold text-black mb-1">{title}</h3>}
-        {value && <p className="text-3xl font-semibold text-blue-600 mt-1">{value}</p>}
-        {subtitle && <p className="text-sm text-gray-600 font-medium">{subtitle}</p>}
+        {title && (
+          <h3 className="text-lg font-semibold text-black mb-1">{title}</h3>
+        )}
+        {value && (
+          <p className="text-3xl font-semibold text-[#426CE5] mt-1">{value}</p>
+        )}
+        {subtitle && (
+          <p className="text-sm text-gray-600 font-medium">{subtitle}</p>
+        )}
       </div>
 
       {buttonText && (
@@ -20,5 +31,5 @@ export default function InfoCard({ title, subtitle, value, buttonText }: InfoCar
         </button>
       )}
     </div>
-  )
+  );
 }

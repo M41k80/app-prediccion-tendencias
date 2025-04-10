@@ -37,10 +37,10 @@ const Home = () => {
           <div className="text-lg text-gray-700">
             Descubrí hacia dónde se dirigen los mercados.Usá nuestra herramienta
             para obtener predicciones en tiempo real basadas{" "}
-            <span className="text-blue-600">inteligencia artificial</span>
+            <span className="text-[#426CE5]">inteligencia artificial</span>
           </div>
           <div className="flex justify-between m-9">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded font-medium">
+            <button className="bg-[#426CE5] hover:bg-[#375CC7] text-white py-2 px-4 rounded font-medium">
               Registrarse
             </button>
             <button className="hover:bg-stone-200 text-black py-2 px-4 rounded font-medium border">
@@ -54,7 +54,7 @@ const Home = () => {
       </div>
       <div className="grid grid-cols-3 gap-4 mt-8">
         <div className="h-32 border border-gray-300 rounded-md shadow-sm bg-white">
-          <h2 className="text-xl font-semibold text-blue-600 mb-4">
+          <h2 className="text-xl font-semibold text-[#426CE5] mb-4">
             Analisis Personalizados
           </h2>
           <p className="text-grey-600">
@@ -62,7 +62,7 @@ const Home = () => {
           </p>
         </div>
         <div className="h-32 border border-gray-300 rounded-md shadow-sm bg-white">
-          <h2 className="text-xl font-semibold text-blue-600 mb-4">
+          <h2 className="text-xl font-semibold text-[#426CE5] mb-4">
             Datos en tiempo real
           </h2>
           <p className="text-grey-600">
@@ -70,7 +70,7 @@ const Home = () => {
           </p>
         </div>
         <div className="h-32 border border-gray-300 rounded-md shadow-sm bg-white">
-          <h2 className="text-xl font-semibold text-blue-600 mb-4">
+          <h2 className="text-xl font-semibold text-[#426CE5] mb-4">
             Comparacion de variables
           </h2>
           <p className="text-grey-600">

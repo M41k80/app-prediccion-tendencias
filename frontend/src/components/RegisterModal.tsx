@@ -13,20 +13,20 @@ const RegisterModal = ({
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative bg-white rounded-lg shadow px-16"
+        className="relative bg-white rounded-2xl shadow px-16"
       >
         <button
           type="button"
-          className="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close"
+          className="absolute cursor-pointer top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close"
           onClick={handleShowModalRegister}
         >
-             <Image 
-                        src="https://www.svgrepo.com/show/521106/close.svg"
-                        alt="Close"
-                        width={20}
-                        height={20}
-                        className="w-5 h-5"
-                      ></Image>
+          <Image
+            src="https://www.svgrepo.com/show/521106/close.svg"
+            alt="Close"
+            width={20}
+            height={20}
+            className="w-5 h-5"
+          ></Image>
           <span className="sr-only">Close popup</span>
         </button>
 
@@ -35,7 +35,7 @@ const RegisterModal = ({
           <p className="mb-4 text-sm font-normal text-gray-800"></p>
 
           <div className="text-center">
-            <p className="mb-3 text-2xl font-semibold text-blue-500">
+            <p className="mb-3 text-2xl font-semibold text-[#426CE5]">
               Crear una cuenta
             </p>
           </div>
@@ -70,65 +70,68 @@ const RegisterModal = ({
               Nombre de Usuario
             </label>
             <div className="relative flex items-center">
-            <Image
+              <Image
                 src="https://www.svgrepo.com/show/522440/profile.svg"
                 alt="Google"
                 width={100}
                 height={100}
-                className="absolute h-[18px] w-[18px] ml-3 " 
-            ></Image>
-            <input
-              name="fullname"
-              type="fullname"
-              autoComplete="fullname"
-              required
-              className="block w-full rounded-lg border border-gray-300 pr-3 pl-10 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-              placeholder="Nombre de Usuario"
-            />
+                className="absolute h-[18px] w-[18px] ml-3 "
+              ></Image>
+              <input
+                name="fullname"
+                type="fullname"
+                autoComplete="fullname"
+                required
+                className="block w-full rounded-lg border border-gray-300 pr-3 pl-10 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                placeholder="Nombre de Usuario"
+              />
             </div>
             <label htmlFor="email" className="sr-only">
               Correo electrónico
             </label>
             <div className="relative flex items-center mt-4">
-            <Image
+              <Image
                 src="https://www.svgrepo.com/show/521128/email-1.svg"
                 alt="Google"
                 width={100}
                 height={100}
-                className="absolute h-[18px] w-[18px] ml-3" 
-            ></Image>
-            <input
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              className="block w-full rounded-lg border border-gray-300 pr-3 pl-10 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-              placeholder="Correo electrónico"
-            />
+                className="absolute h-[18px] w-[18px] ml-3"
+              ></Image>
+              <input
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                className="block w-full rounded-lg border border-gray-300 pr-3 pl-10 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                placeholder="Correo electrónico"
+              />
             </div>
             <label htmlFor="password" className="sr-only">
               Contraseña
             </label>
             <div className="relative flex items-center mt-4">
-            <Image
+              <Image
                 src="https://www.svgrepo.com/show/532323/lock-alt.svg"
                 alt="Google"
                 width={100}
                 height={100}
-                className="absolute h-[18px] w-[18px] ml-3" 
-            ></Image>
-            <input
-              name="password"
-              type="password"
-              autoComplete="current-password"
-              required
-              className="block w-full rounded-lg border border-gray-300 pr-3 pl-10 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-              placeholder="Contraseña"
-            />
+                className="absolute h-[18px] w-[18px] ml-3"
+              ></Image>
+              <input
+                name="password"
+                type="password"
+                autoComplete="current-password"
+                required
+                className="block w-full rounded-lg border border-gray-300 pr-3 pl-10 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                placeholder="Contraseña"
+              />
             </div>
+            <p className="mt-2 text-xs leading-4 text-slate-600 text-center">
+            La contraseña debe tener al menos 8 caracteres.
+          </p>
             <button
               type="submit"
-              className="mt-4 mb-3 inline-flex w-full items-center justify-center rounded-lg bg-blue-500 p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+              className="mt-4 mb-3 inline-flex w-full items-center justify-center rounded-lg bg-[#426CE5] p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
             >
               Registrarse
             </button>
