@@ -63,7 +63,7 @@ const LoginModal = ({ handleShowModalLogin }: { handleShowModalLogin: () => void
 
           <form className="w-full">
             <label htmlFor="email" className="sr-only">
-              Correo electrónico
+              Nombre de Usuario
             </label>
             <div className="relative flex items-center mt-4">
                         <Image
@@ -79,7 +79,7 @@ const LoginModal = ({ handleShowModalLogin }: { handleShowModalLogin: () => void
                           autoComplete="email"
                           required
                           className="block w-full rounded-lg border border-gray-300 pr-3 pl-10 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-                          placeholder="Correo electrónico"
+                          placeholder="Nombre de Usuario"
                         />
                         </div>
             <label htmlFor="password" className="sr-only">
