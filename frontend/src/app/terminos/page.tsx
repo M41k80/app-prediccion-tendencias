@@ -39,7 +39,7 @@ export default function TerminosPage() {
                 1. Aceptación de los términos
               </h2>
               <p className="text-muted-foreground">
-                Al acceder y utilizar nuestra aplicación ZionAI Sistema de Análisis Predictivo de Tendencias de Mercado,
+                Al acceder y utilizar nuestra aplicación ZionAI, Sistema de Análisis Predictivo de Tendencias de Mercado,
                 usted acepta cumplir con estos términos y condiciones de uso. Si
                 no está de acuerdo con alguno de estos términos, le recomendamos
                 que no utilice la Aplicación.
