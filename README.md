@@ -101,7 +101,7 @@ Facilitar decisiones informadas mediante el análisis predictivo de variables cl
 <table align="center">
   <tr>
     <td align="center">Luis Quispe <img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/pe.png" width="16" /></td>
-    <td align="center">José Mora <img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/mex.png" width="16" /></td>
+    <td align="center">José Mora <img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/usa.png" width="16" /></td>
     <td align="center">Christian Aránguiz <img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/ve.png" width="16" /></td>
     <td align="center">Karim Jalit <img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/ar.png" width="16" /></td>
   </tr>
