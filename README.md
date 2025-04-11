@@ -138,9 +138,5 @@ Facilitar decisiones informadas mediante el análisis predictivo de variables cl
 ---
 
 
-## 💬 ¿Preguntas o sugerencias?
 
-No dudes en contactarnos. Estamos construyendo una plataforma con impacto real y escalable.
-
----
 
