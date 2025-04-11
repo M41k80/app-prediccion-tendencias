@@ -84,7 +84,7 @@ export default function DashboardHeader() {
         </p>
       </div>
       <Image
-        src={profileImageUrl || "/perfil.png"}  // Si no hay imagen, mostramos la imagen por defecto
+        src={profileImageUrl || "/favicon.ico"}  
         alt="Perfil del usuario"
         width={40}
         height={40}

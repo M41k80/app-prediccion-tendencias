@@ -43,7 +43,7 @@ const LoginModal = ({
     try {
       // realizamos la solicitud de login
       const loginResponse = await fetch(
-        "https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/token/",
+        "http://localhost:8000/api/token/",
         {
           method: "POST",
           headers: {

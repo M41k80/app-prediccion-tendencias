@@ -106,7 +106,7 @@ export default function PieChartComparison({ className = "" }: PieChartProps) {
             onChange={(e) => setVarA(e.target.value)}
             className="w-full sm:w-48 text-sm border border-gray-300 rounded-md px-3 py-2 text-gray-700"
           >
-            <option value="">-- Selecciona un producto --</option>
+            
             {products.map((product) => (
               <option key={product} value={product}>
                 {product}
@@ -134,8 +134,8 @@ export default function PieChartComparison({ className = "" }: PieChartProps) {
       </div>
 
       {/* Pie chart showing selected products */}
-      <div className="flex justify-center items-center mb-6">
-        <ResponsiveContainer width="100%" height={170}>
+      <div className="flex justify-center items-center mb-2">
+        <ResponsiveContainer width="100%" height={190}>
           <PieChart>
             <Pie
               data={filteredData}

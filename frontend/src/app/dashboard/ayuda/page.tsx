@@ -13,7 +13,7 @@ export default function AyudaPage() {
         <header className="flex justify-between items-center mb-10 max-w-5xl mx-auto">
           <h1 className="text-2xl font-semibold text-black">Ayuda</h1>
           <Image
-            src="/perfil.png"
+            src="/favicon.ico"
             alt="Avatar del usuario"
             width={40}
             height={40}

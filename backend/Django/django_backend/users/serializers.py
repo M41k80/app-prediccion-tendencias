@@ -5,11 +5,12 @@ from .models import CustomUser
 
 
 class UserSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True)
+    password = serializers.CharField(write_only=True, required=False) 
     
     class Meta:
         model = get_user_model()
-        fields = ('id', 'username', 'password', 'email')
+        fields = ('id', 'username', 'password', 'email', 'first_name', 'last_name', 'profile_image')
+
         
     def validate_password(self, value):
         # valida la contraseña según las reglas definidas en settings.py
@@ -31,6 +32,7 @@ class UserSerializer(serializers.ModelSerializer):
             instance.set_password(password)
             instance.save()
         return instance
+    
 class ProfileImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser

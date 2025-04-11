@@ -98,7 +98,7 @@ export default function PredictionCard({
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const response = await fetch("https://leisure-camcorder-acts-run.trycloudflare.com/products");
+        const response = await fetch("http://localhost:8001/products");
         const data = await response.json()
         setProductos(data.products)
       } catch (error) {
@@ -147,7 +147,7 @@ export default function PredictionCard({
         if (!token) {
           throw new Error("No token found in localStorage.");
         }
-      const response = await fetch('https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/predict/', {
+      const response = await fetch('http://localhost:8000/api/predict/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

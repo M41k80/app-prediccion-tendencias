@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -9,7 +10,7 @@ type DateRange = {
     from: Date;
     to: Date;
     date_requested: string;
-  }
+}
 
 
 const LastPrediction = ({ title, buttonText }: LastPredictionProps) => {

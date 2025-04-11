@@ -18,7 +18,7 @@ type DateRange = {
     date_requested: string;
 }
 
-const TrendDataClients = ({ title, variableName }: TrendDataClientsProps) => {
+const TrendDataClientPro = ({ title, variableName }: TrendDataClientsProps) => {
     const [averageCustomers, setAverageCustomers] = useState<string>("");
 
     useEffect(() => {
@@ -85,4 +85,4 @@ const TrendDataClients = ({ title, variableName }: TrendDataClientsProps) => {
     );
 };
 
-export default TrendDataClients;
+export default TrendDataClientPro;
