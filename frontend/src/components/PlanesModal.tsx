@@ -1,21 +1,33 @@
-"use client"
-import React, { useEffect, useState } from "react"
-import Image from "next/image"
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
-const PlanesModal = ({ handleClose }: { handleClose: () => void }) => {
-  const [visible, setVisible] = useState(false)
+const PlanesModal = ({
+  handleClose,
+  volverAlPerfil = false,
+  onVolverAlPerfil,
+}: {
+  handleClose: () => void;
+  volverAlPerfil?: boolean;
+  onVolverAlPerfil?: () => void;
+}) => {
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setVisible(true), 10)
-    return () => clearTimeout(timer)
-  }, [])
+    const timer = setTimeout(() => setVisible(true), 10);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleCloseAnimated = () => {
-    setVisible(false)
+    setVisible(false);
     setTimeout(() => {
-      handleClose()
-    }, 300)
-  }
+      if (volverAlPerfil && onVolverAlPerfil) {
+        onVolverAlPerfil(); // Accion de volver al modal de perfil si se activó desde allí
+      } else {
+        handleClose(); // Accion de cierre normal del modal ya que no viene del modal perfil
+      }
+    }, 300);
+  };
 
   return (
     <div
@@ -25,11 +37,11 @@ const PlanesModal = ({ handleClose }: { handleClose: () => void }) => {
       <div
         onClick={(e) => e.stopPropagation()}
         className={`bg-white rounded-2xl shadow-lg w-full max-w-5xl p-4 sm:p-6 md:p-8 transition-all duration-300 transform
-          ${visible ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 translate-y-4"}
-          max-h-screen overflow-y-auto md:max-h-none md:overflow-visible
-        `}
+        ${visible ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 translate-y-4"}
+        max-h-screen overflow-y-auto md:max-h-none md:overflow-visible
+      `}
       >
-        {/* Header (ya no sticky) */}
+        {/* Header */}
         <div className="flex justify-between items-start mb-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#426CE5]">Planes</h2>
           <button
@@ -46,7 +58,7 @@ const PlanesModal = ({ handleClose }: { handleClose: () => void }) => {
           </button>
         </div>
 
-        {/* Planes */}
+        {/* Planes */}  
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {/* Plan Gratuito */}
           <div className="border border-gray-300 rounded-lg p-4 md:p-6">
@@ -90,7 +102,7 @@ const PlanesModal = ({ handleClose }: { handleClose: () => void }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PlanesModal
+export default PlanesModal;

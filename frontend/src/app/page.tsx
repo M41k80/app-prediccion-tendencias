@@ -28,13 +28,16 @@ export default function Home() {
         <RegisterModal handleShowModalRegister={handleShowModalRegister} />
       )}
       {showModalPlanes && (
-        <PlanesModal handleClose={() => setShowModalPlanes(false)} />
+        <PlanesModal
+          handleClose={() => setShowModalPlanes(false)}
+          volverAlPerfil={false} // estado en falso para diferenciar de el flujo de modal en perfil
+        />
       )}
 
       {/* Header */}
       <header className="bg-white py-8">
         <div className="container mx-auto px-4 flex flex-col items-center gap-4 md:flex-row md:justify-between">
-          {/* Logo + texto */}
+          {/* Logo y texto */}
           <div className="flex items-center gap-2 justify-center w-full md:w-auto">
             <h1 className="text-2xl font-semibold whitespace-nowrap leading-none">
               Bienvenido a
@@ -77,7 +80,7 @@ export default function Home() {
               </h2>
               <p className="text-lg text-gray-700">
                 Descubre hacia dónde se dirigen los mercados. Usá nuestra
-                herramienta para obtener predicciones en tiempo real basadas en{" "}
+                herramienta para obtener predicciones en tiempo real basadas en {" "}
                 <span className="text-[#426CE5] font-semibold">
                   inteligencia artificial
                 </span>
