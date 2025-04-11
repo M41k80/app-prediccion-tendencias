@@ -243,21 +243,21 @@ export default function PredictionCard({
 
       {/* Formulario */}
       <div
-        className={`bg-white shadow-sm p-6 h-full border border-gray-200 rounded-xl ${status !== "form" ? "opacity-0 pointer-events-none" : ""
+        className={`bg-white shadow-sm p-12 h-full border border-gray-200 rounded-xl ${status !== "form" ? "opacity-0 pointer-events-none" : ""
           }`}
       >
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h3 className="text-lg font-semibold text-black">
+            <h3 className="text-2xl font-semibold mb-4 text-black">
               Generar una nueva predicción
             </h3>
-            <p className="text-sm text-gray-500 font-medium mt-1">
+            <p className="text-sm text-gray-500 font-medium mb-4">
               Completá los datos y generá la predicción.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
 
           <div className="space-y-2">
 

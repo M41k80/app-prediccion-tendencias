@@ -12,7 +12,7 @@ export default function InfoCard({
   buttonText,
 }: InfoCardProps) {
   return (
-    <div className="bg-white shadow-sm p-4 flex flex-col justify-between h-full border border-gray-200 rounded-xl">
+    <div className="bg-white shadow-sm p-4 flex flex-col justify-between h-auto border border-gray-200 rounded-xl">
       <div>
         {title && (
           <h3 className="text-lg font-semibold text-black mb-1">{title}</h3>

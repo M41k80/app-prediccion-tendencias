@@ -96,7 +96,7 @@ export default function LineChartCard({ className = "" }: Props) {
   }, []);
 
   return (
-    <div className={`bg-white p-10 shadow-sm border border-gray-200 rounded-xl ${className}`}>
+    <div className={`bg-white p-10  shadow-sm border border-gray-200 rounded-xl ${className}`}>
       <div className="flex justify-between mb-2">
         <h3 className="text-lg font-semibold text-black">Análisis predictivo más reciente</h3>
         <span className="text-xs text-gray-400">Últimos 7 días</span>

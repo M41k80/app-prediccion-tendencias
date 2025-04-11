@@ -135,14 +135,14 @@ export default function PieChartComparison({ className = "" }: PieChartProps) {
 
       {/* Pie chart showing selected products */}
       <div className="flex justify-center items-center mb-6">
-        <ResponsiveContainer width="100%" height={300}>
+        <ResponsiveContainer width="100%" height={170}>
           <PieChart>
             <Pie
               data={filteredData}
               dataKey="value"
               nameKey="name"
-              outerRadius={80}
-              innerRadius={45}
+              outerRadius={60}
+              innerRadius={25}
               label={({ percent }) => `${(percent * 100).toFixed(0)}%`}
               labelLine={false}
             >

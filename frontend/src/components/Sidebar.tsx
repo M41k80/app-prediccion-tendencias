@@ -33,6 +33,11 @@ export default function Sidebar() {
     setIsOpen(false);
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("access_token");
+    router.push("/");
+  };
+
   return (
     <>
       {/* Botón hamburguesa para móvil */}
@@ -46,17 +51,13 @@ export default function Sidebar() {
       {/* Sidebar Desktop */}
       <aside className="hidden md:flex w-1/6 bg-gray-100 text-black flex-col items-center py-6 space-y-8">
         {/* Logo */}
-        <div
-          className="cursor-pointer mb-4"
-          onClick={() => handleNavigate("/")}
-        >
+        <div className="mt-2 mb-10">
           <Image
-            src="/logo.png"
-            alt="Logo de la plataforma"
-            width={60}
-            height={30}
-            className="object-contain mx-auto"
-            priority
+            src="/logo-horizontal.png"
+            alt="Logo"
+            width={150}
+            height={70}
+            className="object-contain"
           />
         </div>
 
@@ -71,7 +72,10 @@ export default function Sidebar() {
           </div>
         ))}
 
-        <h2 className="mt-auto text-black font-semibold cursor-pointer">
+        <h2
+          onClick={handleLogout}
+          className="mt-auto mb-14 text-black font-semibold cursor-pointer hover:text-[#426CE5] transition"
+        >
           Cerrar Sesión
         </h2>
       </aside>
@@ -86,22 +90,18 @@ export default function Sidebar() {
           className="fixed top-0 left-0 w-2/3 h-full z-50 p-6 flex flex-col space-y-6 md:hidden bg-gray-100"
         >
           {/* Logo móvil */}
-          <div
-            className="cursor-pointer mb-4 flex justify-center"
-            onClick={() => handleNavigate("/dashboard")}
-          >
+          <div className="mb-6 flex justify-center">
             <Image
-              src="/logo.png"
-              alt="Logo de la plataforma"
-              width={60}
-              height={30}
+              src="/logo-horizontal.png"
+              alt="Logo"
+              width={150}
+              height={70}
               className="object-contain"
-              priority
             />
           </div>
 
           <button
-            className="self-end text-black mb-4 cursor-pointer"
+            className="self-end text-black mb-4 cursor-pointer text-xl font-semibold"
             onClick={() => setIsOpen(false)}
           >
             ✕
@@ -113,14 +113,17 @@ export default function Sidebar() {
               className="flex items-center gap-3 hover:bg-gray-200 cursor-pointer py-2 px-3 rounded"
               onClick={() => handleNavigate(path)}
             >
-              <Icon className="w-5 h-5" strokeWidth={1.5} />
+              <Icon className="w-6 h-6" strokeWidth={1.5} />
               <span className="text-base font-semibold text-black">
                 {label}
               </span>
             </div>
           ))}
 
-          <h2 className="mt-auto text-black font-semibold text-center cursor-pointer">
+          <h2
+            onClick={handleLogout}
+            className="mt-auto text-black font-semibold text-center cursor-pointer hover:text-[#426CE5] transition"
+          >
             Cerrar Sesión
           </h2>
         </motion.aside>

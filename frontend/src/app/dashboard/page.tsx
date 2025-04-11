@@ -53,11 +53,11 @@ const Dashboard = () => {
 
         {/* Predicción + Análisis */}
         <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6 items-start">
-          <div className="lg:col-span-2 space-y-4">
+          <div className="lg:col-span-2 space-y-6">
             <PredictionCard />
             <LineChartCard />
           </div>
-          <div className="flex flex-col gap-4 h-full space-y-4">
+          <div className="flex flex-col gap-4 h-full space-y-6">
             <TrendDataClientPro title="Promedio de clientes"  variableName="la ultima predicción" />
             <PieChartSelect className="-mt-4" />
           </div>
