@@ -1,5 +1,5 @@
 <div align="center">
-<img src="" alt="portada" />
+<img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/portada.png" alt="portada" />
 </div>
 
 # 📊 ZionAI | Sistema de Análisis Predictivo de Tendencias de Mercado
@@ -53,16 +53,16 @@ Facilitar decisiones informadas mediante el análisis predictivo de variables cl
 
 ## 🧠 Tecnologías Utilizadas
 
-### **🎨 UX/UI Design**
+### **🎨 UX/UI Design:**
 
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
-### **🧬 Inteligencia Artificial**
+### **🧬 Inteligencia Artificial:**
 
 ![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
-### **🖥️ Frontend**
+### **🖥️ Frontend:**
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
@@ -74,13 +74,13 @@ Facilitar decisiones informadas mediante el análisis predictivo de variables cl
 
 
 
-### **⚙️ Backend**
+### **⚙️ Backend:**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 
-### **🔧 Herramientas de Desarrollo**
+### **🔧 Herramientas:**
 
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
