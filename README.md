@@ -8,6 +8,10 @@
 
 ---
 
+<div align="center">
+<img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/home-mockup.png" alt="home" />
+</div>
+
 ## 🎯 Objetivo
 
 Facilitar decisiones informadas mediante el análisis predictivo de variables clave del mercado, como ventas e interacciones sociales, a través de modelos de inteligencia artificial.
@@ -40,6 +44,12 @@ Facilitar decisiones informadas mediante el análisis predictivo de variables cl
 4. **Dashboard:** Análisis de métricas y navegación por predicciones anteriores.
 
 ---
+
+## 🎨 Design UI
+
+<div align="center">
+<img src="https://github.com/M41k80/app-prediccion-tendencias/blob/main/img/vistas-mockup.png" alt="DesignUI" />
+</div>
 
 ## 🧠 Tecnologías Utilizadas
 
