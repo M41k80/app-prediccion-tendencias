@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
             <div className="w-full max-w-4xl">
                 <div>
                     <Link href="/">
-                        <Button variant="ghost" className="gap-2">
+                        <Button variant="ghost" className="gap-2 cursor-pointer">
                             <ArrowLeft size={16} />
                             Volver al inicio
                         </Button>
@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
                         <section className="space-y-3">
                             <h2 className="text-xl font-semibold">1. Introducción</h2>
                             <p className="text-muted-foreground">
-                                En [Nombre de la Empresa], respetamos su privacidad y nos comprometemos a proteger sus datos personales.
+                                En ZionAI, respetamos su privacidad y nos comprometemos a proteger sus datos personales.
                                 Esta política de privacidad le informará sobre cómo cuidamos sus datos personales cuando visita nuestro
                                 sitio web y le informará sobre sus derechos de privacidad y cómo la ley lo protege.
                             </p>
@@ -112,8 +112,8 @@ export default function PrivacyPolicyPage() {
                                 en:
                             </p>
                             <div className="bg-muted p-4 rounded-md">
-                                <p className="font-medium">[Nombre de la Empresa]</p>
-                                <p className="text-muted-foreground">Email: contacto@empresa.com</p>
+                                <p className="font-medium">ZionAI</p>
+                                <p className="text-muted-foreground">Email: soporte.zionai@gmail.com</p>
                                 <p className="text-muted-foreground">Teléfono: +1 630 850 4588</p>
                                 <p className="text-muted-foreground">Dirección: Enrique Segoviano 1234, La Vecindad</p>
                             </div>
@@ -122,7 +122,7 @@ export default function PrivacyPolicyPage() {
                 </Card>
 
                 <footer className="text-center text-sm text-muted-foreground pt-6 pb-10">
-                    <p>© {new Date().getFullYear()} [Nombre de la Empresa]. Todos los derechos reservados.</p>
+                    <p>© {new Date().getFullYear()} ZionAI. Todos los derechos reservados.</p>
                 </footer>
             </div>
         </div>
