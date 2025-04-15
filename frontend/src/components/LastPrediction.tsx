@@ -26,7 +26,7 @@ const LastPrediction = ({ title, buttonText }: LastPredictionProps) => {
                     throw new Error("No token found in localStorage.");
                 }
 
-                const historialRes = await fetch("http://127.0.0.1:8000/api/historial/", {
+                const historialRes = await fetch("https://django-backend-g9yv.onrender.com/api/historial/", {
                     method: "GET",
                     headers: {
                         Authorization: `Bearer ${token}`,

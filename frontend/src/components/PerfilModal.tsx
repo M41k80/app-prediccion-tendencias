@@ -29,7 +29,7 @@ const PerfilModal = ({
     if (!token) {
       throw new Error("No token found in localStorage.");
     }
-    const res = await fetch("http://localhost:8000/api/users/me", {
+    const res = await fetch("https://django-backend-g9yv.onrender.com/api/users/me", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -41,7 +41,7 @@ const PerfilModal = ({
     setLastName(data.last_name);
     setEmail(data.email);
     setProfileImage(
-      data.profile_image ? `http://localhost:8000${data.profile_image}` : null
+      data.profile_image ? `https://django-backend-g9yv.onrender.com${data.profile_image}` : null
     );
   };
 
@@ -62,7 +62,7 @@ const PerfilModal = ({
       throw new Error("No token found in localStorage.");
     }
 
-    const response = await fetch("http://localhost:8000/api/users/me", {
+    const response = await fetch("https://django-backend-g9yv.onrender.com/api/users/me", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -101,7 +101,7 @@ const PerfilModal = ({
     formData.append("profile_image", imageFile!);
 
     const response = await fetch(
-      `http://localhost:8000/api/users/${userId}/upload_profile_image/`,
+      `https://django-backend-g9yv.onrender.com/api/users/${userId}/upload_profile_image/`,
       {
         method: "PATCH",
         headers: {
@@ -125,9 +125,13 @@ const PerfilModal = ({
     if (!token) {
       throw new Error("No token found in localStorage.");
     }
+    if (!userId) {
+      console.error("User ID no disponible para eliminar cuenta");
+      return;
+    }
     const confirmed = window.confirm("¿Estás seguro de que deseas eliminar tu cuenta?");
     if (confirmed) {
-      const response = await fetch("http://localhost:8000/api/users/me", {
+      const response = await fetch(`https://django-backend-g9yv.onrender.com/api/users/${userId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

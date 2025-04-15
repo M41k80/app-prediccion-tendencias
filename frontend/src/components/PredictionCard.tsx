@@ -98,7 +98,7 @@ export default function PredictionCard({
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const response = await fetch("http://localhost:8001/products");
+        const response = await fetch("https://fast-api-backend-145r.onrender.com/products");
         const data = await response.json()
         setProductos(data.products)
       } catch (error) {
@@ -147,7 +147,7 @@ export default function PredictionCard({
         if (!token) {
           throw new Error("No token found in localStorage.");
         }
-      const response = await fetch('http://localhost:8000/api/predict/', {
+      const response = await fetch('https://django-backend-g9yv.onrender.com/api/predict/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -157,9 +157,14 @@ export default function PredictionCard({
       });
       const result = await response.json();
       console.log("Predicción exitosa:", result);
-      toast.success("✅ Predicción generada con éxito.");
+      toast.success("✅ Predicción generada con éxito.", {
+        duration: Infinity, 
+        dismissible: true,  
+      });;
       setStatus("success");
-      window.location.reload()
+      setTimeout(() => {
+        window.location.reload()
+      }, 8000);
       // Aquí podés hacer más cosas con response.data si lo necesitás
     } catch (error) {
       toast.error("❌ Error al generar la predicción.");
@@ -233,7 +238,7 @@ export default function PredictionCard({
           </p>
 
           <Link
-            href="/dashboard/prediccion"
+            href="/dashboard/historial"
             className="bg-[#426CE5] hover:bg-[#375CC7] text-white text-sm font-semibold px-8 py-2.5 rounded-md"
           >
             Ver más

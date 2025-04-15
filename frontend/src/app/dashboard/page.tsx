@@ -29,10 +29,12 @@ const Dashboard = () => {
   }, [router]);
 
   const checkTokenValidity = async () => {
-    const response = await fetch("/api/check-token", {
+      const token = localStorage.getItem("access_token");
+      if (!token) return;
+    const response = await fetch("https://django-backend-g9yv.onrender.com/api/check-token", {
       method: "GET",
       headers: {
-        "Authorization": `Bearer ${localStorage.getItem("token")}`,
+        "Authorization": `Bearer ${token}`,
       },
     });
     const data = await response.json();

@@ -25,7 +25,7 @@ const ActualizarPerfilModal = ({
       const token = localStorage.getItem("access_token");
       if (!token) return;
 
-      const res = await fetch("http://localhost:8000/api/users/me", {
+      const res = await fetch("https://django-backend-g9yv.onrender.com/api/users/me", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -67,7 +67,7 @@ const ActualizarPerfilModal = ({
       bodyData.password = password;
     }
 
-    const res = await fetch("http://localhost:8000/api/users/me", {
+    const res = await fetch("https://django-backend-g9yv.onrender.com/api/users/me", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

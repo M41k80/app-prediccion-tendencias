@@ -44,7 +44,7 @@ const RegisterModal = ({
     try {
       // primero registramos al usuario
       const registerResponse = await fetch(
-        "https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/users/",
+        "https://django-backend-g9yv.onrender.com/api/users/",
         {
           method: "POST",
           headers: {
@@ -61,7 +61,7 @@ const RegisterModal = ({
       if (registerResponse.status === 201) {
         // si el registro es exitoso, hacemos el login automáticamente
         const loginResponse = await fetch(
-          "https://a33b-2600-1008-a031-7483-a867-554-1fa-2eb9.ngrok-free.app/api/token/",
+          "https://django-backend-g9yv.onrender.com/api/token/",
           {
             method: "POST",
             headers: {
@@ -83,7 +83,7 @@ const RegisterModal = ({
             localStorage.setItem("access_token", data.access);
             toast.success("¡Registro y login exitosos!");
             handleClose(); // cerramos el modal
-            router.push("/dashboard"); // vamos al dashboard
+            router.push("/dashboard/prediccion"); // vamos al dashboard
           } else {
             toast.error("No se recibió el token.");
           }

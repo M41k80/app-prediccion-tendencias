@@ -42,8 +42,9 @@ const LoginModal = ({
 
     try {
       // realizamos la solicitud de login
+      
       const loginResponse = await fetch(
-        "http://localhost:8000/api/token/",
+        "https://django-backend-g9yv.onrender.com/api/token/",
         {
           method: "POST",
           headers: {

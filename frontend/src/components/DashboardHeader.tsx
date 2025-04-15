@@ -16,7 +16,7 @@ export default function DashboardHeader() {
           throw new Error("No token found in localStorage.")
         }
 
-        const response = await fetch("http://localhost:8000/api/user-info/", {
+        const response = await fetch("https://django-backend-g9yv.onrender.com/api/user-info/", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -49,7 +49,7 @@ export default function DashboardHeader() {
           throw new Error("No token found in localStorage.")
         }
     
-        const response = await fetch(`http://localhost:8000/api/users/${userId}/profile_image/`, {
+        const response = await fetch(`https://django-backend-g9yv.onrender.com/api/users/${userId}/profile_image/`, {
           method: "GET",  
           headers: {
             Authorization: `Bearer ${token}`,
@@ -58,7 +58,7 @@ export default function DashboardHeader() {
     
         if (response.ok) {
           const data = await response.json()
-          const absoluteUrl = `http://localhost:8000${data.profile_image_url}`;
+          const absoluteUrl = `https://django-backend-g9yv.onrender.com${data.profile_image_url}`;
           
           setProfileImageUrl(absoluteUrl);
         } else {

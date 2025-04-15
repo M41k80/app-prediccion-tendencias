@@ -2,7 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import HeroAnimation from "@/components/HeroAnimation";
+import dynamic from 'next/dynamic';
+
+const HeroAnimation = dynamic(() => import('@/components/HeroAnimation'), {
+  ssr: false,
+});
 
 import LoginModal from "@/components/LoginModal";
 import RegisterModal from "@/components/RegisterModal";

@@ -13,7 +13,7 @@ const ExitoModal = ({ handleClose }: { handleClose: () => void }) => {
   const handleCloseAnimated = () => {
     setVisible(false);
     setTimeout(() => {
-      handleClose(); // Acción que vuelve a mostrar el PerfilModal
+      handleClose(); 
     }, 300);
   };
 

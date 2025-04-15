@@ -50,7 +50,7 @@ export default function LineChartCard({ className = "" }: Props) {
         }
 
         const historialRes = await fetch(
-          "http://127.0.0.1:8000/api/historial/",
+          "https://django-backend-g9yv.onrender.com/api/historial/",
           {
             method: "GET",
             headers: {
