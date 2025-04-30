@@ -93,7 +93,7 @@ Facilitar decisiones informadas mediante el análisis predictivo de variables cl
 ### **Enlaces de Acceso al MVP:**
 
 [![FIGMA](https://img.shields.io/badge/figma-9C55F7?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/proto/QXkf5hYlMwhb6hIN1vv0Oi/NoCountry?node-id=52-94&t=EgAdm2SSjaKdhuHb-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=57%3A293)
-[![Sitio web](https://img.shields.io/website?url=https%3A%2F%2Ffipe.cl&style=for-the-badge)]()
+[![Sitio web](https://img.shields.io/website?url=https%3A%2F%2Ffipe.cl&style=for-the-badge)](https://zionai-self.vercel.app/)
 
 ---
 
